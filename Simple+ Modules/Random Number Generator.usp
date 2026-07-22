@@ -1,0 +1,43 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+*******************************************************************************************/
+/*
+Name: Mike G
+Comments: Simple module that generates a random number between two limits.
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#HINT "Returns random number between Upper and Lower input values."
+#CATEGORY "11" // Counters
+#ENABLE_TRACE
+
+#HELP_BEGIN
+   Takes in Upper and Lower range limits. Returns a number on rising edge of "Generate" input.
+#HELP_END
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+Digital_Input		Generate_Number;
+
+Integer_Parameter 	_skip_,
+					LowerLimit,
+					UpperLimit;
+
+Analog_Output		Number_Out;
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+PUSH Generate_Number
+{
+Integer RanNumber;
+  RanNumber = Random(LowerLimit,UpperLimit);
+  Number_Out = RanNumber;
+}

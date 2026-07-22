@@ -1,0 +1,22 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.1101.2.0"
+Created = 2026-06-21 15:50:22.546204-04:00
+LastModifiedByAppHost = "2.1101.2.0"
+Modified = 2026-06-21 15:50:22.546196-04:00
+CreatedByProjectApp = "1.4601.12.0"
+LastModifiedByProjectApp = "1.4601.12.0"
+MinimumProjectApp = ""
+MinimumAppHost = "2.901.0"
+
+{AssetAttributes}
+
+[Attributes]
+Id = "f6650bdc-c59f-4c88-a2ba-82803dffe7c9"
+Name = "Asset 1"
+SourceUri = "Asset 1.jpg"
+AspectRatio = "1.7786458333333333"
+AssetSourceType = "File"
+Username = ""
+Password = ""
+

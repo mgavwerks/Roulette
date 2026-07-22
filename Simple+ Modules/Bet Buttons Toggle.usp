@@ -1,0 +1,34 @@
+#CATEGORY "46" "Game" // Custom
+/*******************************************************************************************
+  Compiler Directives
+*******************************************************************************************/
+//#HINT "Roulette Button Feedback"
+#ENABLE_TRACE
+
+// #DEFINE_CONSTANT - Variable that is never changed.
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+Digital_Input	ResetButtons,
+				BetButtons[154];
+Digital_Output	BetButtonsOut[154];
+
+Push BetButtons {
+	Integer	Index;
+	Index = GetLastModifiedArrayIndex();
+	If(BetButtonsOut[Index] != 1){
+	BetButtonsOut[Index] = 1;
+	} else {BetButtonsOut[Index] = 0;}
+}
+
+Push ResetButtons {
+	SetArray(BetButtonsOut, 0);
+}
+
+Function Main()
+{
+ SetArray(BetButtonsOut, 0); 
+}

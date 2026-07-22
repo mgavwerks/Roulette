@@ -1,0 +1,310 @@
+/*******************************************************************************************
+  Compiler Directives
+*******************************************************************************************/
+#HINT "Helps with identifying winning number"	//Appears at the bottom of SimplWindows
+#ENABLE_TRACE	//Makes trace statements work.
+#CATEGORY "46" "Game" // Custom
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+DIGITAL_INPUT	ResetOutputs;
+ANALOG_INPUT	WinningNumber;
+Digital_Output	Odd,
+				Even,
+				Black,
+				Red,
+				FirstTwelve,
+				SecondTwelve,
+				ThirdTwelve,
+				ColumnOne,
+				ColumnTwo,
+				ColumnThree,
+				Zero,
+				DblZero;
+Analog_Output	WinningNumberOut;
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+STRUCTURE BlackNumbers
+{
+Integer Number[18];
+};
+
+Structure Streets
+{
+Integer Col1;
+Integer Col2;
+Integer Col3;
+};
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+INTEGER AllArray[37],
+		BetsArray[100],
+		OddArray[18],
+		EvenArray[18],
+		FirstTwelveArray[12],
+		SecondTwelveArray[12],
+		ThirdTwelveArray[12],
+		ColumnOneArray[12],
+		ColumnTwoArray[12],
+		ColumnThreeArray[12];
+		
+BlackNumbers Blacks;
+Streets Row[12];
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+
+Function BuildArrays()
+{
+Integer index;
+Integer	currentOdd;
+Integer	currentEven;
+Integer	FirstTwelveNum;
+Integer	SecondTwelveNum;
+Integer	ThirdTwelveNum;
+Integer ColOneStart;
+Integer ColTwoStart;
+Integer ColThreeStart;
+currentOdd = 1;
+currentEven = 2;
+FirstTwelveNum = 1;
+SecondTwelveNum = 13;
+ThirdTwelveNum = 25;
+ColOneStart = 1;
+ColTwoStart = 2;
+ColThreeStart = 3;
+
+
+	for(index = 1 to 37){
+	AllArray[index] = index - 1;
+	}
+		
+	for(index = 1 to 18){
+	OddArray[index] = currentOdd;
+	currentOdd = currentOdd + 2;
+	}
+	
+	for(index = 1 to 18){
+	EvenArray[index] = currentEven;
+	currentEven = currentEven + 2;
+	}
+	
+	for(index = 1 to 12){
+	FirstTwelveArray[index] = FirstTwelveNum;
+	FirstTwelveNum = FirstTwelveNum + 1;
+	}
+	
+	for(index = 1 to 12){
+	SecondTwelveArray[index] = SecondTwelveNum;
+	SecondTwelveNum = SecondTwelveNum + 1;
+	}
+	
+	for(index = 1 to 12){
+	ThirdTwelveArray[index] = ThirdTwelveNum;
+	ThirdTwelveNum = ThirdTwelveNum + 1;
+	}
+	
+	for(index = 1 to 12){
+	ColumnOneArray[index] = ColOneStart;
+	ColOneStart = ColOneStart + 3;
+	}
+	
+	for(index = 1 to 12){
+	ColumnTwoArray[index] = ColTwoStart;
+	ColTwoStart = ColTwoStart + 3;
+	}
+	
+	for(index = 1 to 12){
+	ColumnThreeArray[index] = ColThreeStart;
+	ColThreeStart = ColThreeStart + 3;
+	}
+	
+Blacks.Number[1]	= 2;
+Blacks.Number[2]	= 4;
+Blacks.Number[3]	= 6;
+Blacks.Number[4]	= 8;
+Blacks.Number[5]	= 10;
+Blacks.Number[6]	= 11;
+Blacks.Number[7]	= 13;
+Blacks.Number[8]	= 15;
+Blacks.Number[9]	= 17;
+Blacks.Number[10]	= 20;
+Blacks.Number[11]	= 22;
+Blacks.Number[12]	= 24;
+Blacks.Number[13]	= 26;
+Blacks.Number[14]	= 28;
+Blacks.Number[15]	= 29;
+Blacks.Number[16]	= 31;
+Blacks.Number[17]	= 33;
+Blacks.Number[18]	= 35;
+
+}
+
+/*
+Row[1].Col1 = 1;	Row[1].Col2 = 2;	Row[1].Col3 = 3;
+Row[2].Col1 = 4;	Row[2].Col2 = 5;	Row[2].Col3 = 6;
+Row[3].Col1 = 7;	Row[3].Col2 = 8;	Row[3].Col3 = 9;
+Row[4].Col1 = 10;	Row[4].Col2 = 11;	Row[4].Col3 = 12;
+
+Row[5].Col1 = 13;	Row[5].Col2 = 14;	Row[5].Col3 = 15;
+Row[6].Col1 = 16;	Row[6].Col2 = 17;	Row[6].Col3 = 18;
+Row[7].Col1 = 19;	Row[7].Col2 = 20;	Row[7].Col3 = 21;
+Row[8].Col1 = 22;	Row[8].Col2 = 23;	Row[8].Col3 = 24;
+
+Row[9].Col1 = 25;	Row[9].Col2 = 26;	Row[9].Col3 = 27;
+Row[10].Col1 = 28;	Row[10].Col2 = 29;	Row[10].Col3 = 30;
+Row[11].Col1 = 31;	Row[11].Col2 = 32;	Row[11].Col3 = 33;
+Row[12].Col1 = 34;	Row[12].Col2 = 35;	Row[12].Col3 = 36;
+*/
+
+
+/*
+Function CheckStraightBets(integer bet){
+
+	integer index;
+	
+	for(index = 1 to 37){
+	//trace("Printing array position %d: %d", index, AllArray[index]);
+		if(AllArray[index] = bet){
+			StraightWinner = 1;
+		}
+	}
+}
+*/
+
+Function CheckOddBets(integer bet){
+
+	integer index;
+	
+	for(index = 1 to 18){
+	//Trace("Checking OddArray position %d. Position %d is: %d",index, index, OddArray[index]);
+		if(OddArray[index] = bet){
+		//Trace("There is a match at position %d!", index);
+			Odd = 1;
+		}
+	}
+}
+
+Function CheckEvenBets(integer bet){
+	integer index;
+	
+	for(index = 1 to 18){
+	//Trace("Checking EvenArray position %d. Position %d is: %d",index, index, EvenArray[index]);
+		if(EvenArray[index] = bet){
+		//Trace("There is a match at position %d!", index);
+			Even = 1;
+		}
+	}
+}
+
+Function CheckBlackOrRed(integer number){
+	Integer index;
+	Integer isMatch;
+	isMatch = 0;
+   
+	if(number != 0){
+	for(index = 1 to 18){
+		//Trace("The black numbers are %d", Blacks.Number[index]);
+		if(number = Blacks.Number[index])
+		{
+		isMatch = 1;
+		}
+	}
+	
+	if (isMatch = 1){
+		Black = 1;
+	}
+	else {
+		Red = 1;
+	}
+	}
+}
+
+Function CheckTwelves(integer number) {
+	FirstTwelve = 0;
+	SecondTwelve = 0;
+	ThirdTwelve = 0;
+
+	if (number >= 1 && number <= 12){
+  		FirstTwelve = 1;
+  	}
+ 	else if (number >= 13 && number <= 24){
+ 		SecondTwelve = 1;
+ 	}
+ 	else if (number >= 25 && number <= 36){
+ 		ThirdTwelve = 1;
+ 	}
+}
+
+Function CheckColumns(integer number){
+	Integer index;
+
+    for(index = 1 to 12){
+    	if (number = ColumnOneArray[index]){
+    		ColumnOne = 1;
+    	}
+		else if (number = ColumnTwoArray[index]){
+    		ColumnTwo = 1;
+    	}
+    	else if (number = ColumnThreeArray[index]){
+    		ColumnThree = 1;
+    	}
+    }    		
+}
+
+/*******************************************************************************************
+  Event Handlers
+*******************************************************************************************/
+PUSH ResetOutputs {
+	Odd = 0;
+	Even = 0;
+	Black = 0;
+	Red = 0;
+	FirstTwelve = 0;
+	SecondTwelve = 0;
+	ThirdTwelve = 0;
+	ColumnOne = 0;
+	ColumnTwo = 0;
+	ColumnThree = 0;
+	Zero = 0;
+	DblZero = 0;
+}
+
+CHANGE WinningNumber{
+
+	integer number;
+	number = WinningNumber;
+	
+	If(number = 0){
+	Zero = 1;}
+	if(number = 37){
+	DblZero = 1;}
+	
+	if(number !=0 && number != 37){
+	Trace("Checking %d...",number);
+	CheckOddBets(number);
+	CheckEvenBets(number);
+	CheckBlackOrRed(number);
+	CheckTwelves(number);
+	CheckColumns(number);
+	}
+	WinningNumberOut = number;
+	
+
+}
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+Function Main()
+{
+	WaitForInitializationComplete();
+	BuildArrays();
+}

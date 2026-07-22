@@ -1,0 +1,60 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.1101.2.0"
+Created = 2026-06-21 15:48:55.176092-04:00
+LastModifiedByAppHost = "2.1301.14.0"
+Modified = 2026-07-19 21:40:20.379561-04:00
+CreatedByProjectApp = "1.4601.12.0"
+LastModifiedByProjectApp = "1.4701.7.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.901.0"
+
+{DeviceResolutionSource}
+[
+  {
+    "ProjectId": "d08b2852-7d26-4b7e-acc9-c5c60b4a03ad",
+    "IsCustom": true,
+    "IsSelected": true,
+    "VisitedName": "Landscape 1080p",
+    "id": "Custom-L-8859afa7-5fe4-43fe-846b-3f4b50cd323d-1920-1080",
+    "idName": "Landscape 1080p",
+    "resolutionId": "L-1920-1080",
+    "resolutionName": "Landscape 1080p",
+    "resolutionType": "custom",
+    "deviceSpecId": "Landscape 1080p",
+    "width": "1920px",
+    "height": "1080px",
+    "widthMedia": "1920px",
+    "heightMedia": "1080px",
+    "orientation": 1,
+    "supportedDevices": "",
+    "displayNameSuffix": "",
+    "componentKeys": [
+      "UiEditor"
+    ],
+    "modes": [],
+    "IsMode": false
+  }
+]
+
+{ProjectAttributes}
+
+[Attributes]
+ComponentKey = "UiEditor"
+Name = "Roulette"
+ThemeId = "dark-theme.css"
+ProjectThemeIds = "dark-theme.css"
+ThemePageColor = "#4d4d4d"
+IncludeUnusedAsset = "True"
+OverrideThemeColor = "False"
+SdkId = "CH5:2.17.2"
+Id = "d08b2852-7d26-4b7e-acc9-c5c60b4a03ad"
+RuntimeThemeJoin = "0"
+RuntimeLanguageJoin = "0"
+DefaultComponentMode = "custom"
+DefaultFontFamily = "Roboto"
+DeviceResolutionIds = "Custom-L-8859afa7-5fe4-43fe-846b-3f4b50cd323d-1920-1080"
+ipId = "20"
+ProjectSchemaVersion = "12"
+ContractIsStale = "true"
+

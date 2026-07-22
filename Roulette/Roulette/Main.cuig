@@ -1,0 +1,847 @@
+{FileMetadata}
+Schema = "1.0.0.0"
+CreatedByAppHost = "2.1301.14.0"
+Created = 2026-07-19 20:44:52.767005-04:00
+LastModifiedByAppHost = "2.1301.14.0"
+Modified = 2026-07-19 20:44:52.766991-04:00
+CreatedByProjectApp = "1.4701.7.0"
+LastModifiedByProjectApp = "1.4701.7.0"
+MinimumProjectApp = "1.2600.1"
+MinimumAppHost = "2.901.0"
+
+{Html}
+<ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="int7p" componentname="Formatted-Text" ccid_activefont="" ccid_label="<p><ch5-jointotext-string id=&quot;i8an&quot; receivestatevalue=&quot;Serial&quot; textwhenempty=&quot;**Error Message**&quot;></ch5-jointotext-string></p>" labelinnerhtml="<p><ch5-jointotext-string id=&quot;i8an&quot; receivestatevalue=&quot;Serial&quot; textwhenempty=&quot;**Error Message**&quot;></ch5-jointotext-string></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" pd-receivestateshow="Contract Enabled">
+              </ch5-text><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="False" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="syncEnabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="iwawk7nvj9b2y" componentname="Reset.btn" ccid_activefont="'Roboto'" ccid_label="Reset" labelinnerhtml="Reset" assetid="0" pageflip="0" ccid_componenttype="Button" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_sync_normal_appearancesector_background-color="syncDisabled" ccid_sync_normal_appearancesector_background-color_toggle="0" ccid_sync_pressed_appearancesector_background-color="syncDisabled" ccid_sync_pressed_appearancesector_background-color_toggle="0" ccid_sync_selected_appearancesector_background-color="syncDisabled" ccid_sync_selected_appearancesector_background-color_toggle="0" ccid_sync_normal_appearancesector_border-color="syncEnabled" ccid_sync_pressed_appearancesector_border-color="syncEnabled" ccid_sync_selected_appearancesector_border-color="syncEnabled" ccid_sync_normal_appearancesector_border-width="syncEnabled" ccid_sync_pressed_appearancesector_border-width="syncEnabled" ccid_sync_selected_appearancesector_border-width="syncEnabled" ccid_sync_normal_appearancesector_border-style="syncEnabled" ccid_sync_pressed_appearancesector_border-style="syncEnabled" ccid_sync_selected_appearancesector_border-style="syncEnabled" ccid_sync_normal_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_normal_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_normal_labelsector_color="syncEnabled" ccid_sync_pressed_labelsector_color="syncEnabled" ccid_sync_selected_labelsector_color="syncEnabled" ccid_sync_normal_labelsector_font-size="syncEnabled" ccid_sync_pressed_labelsector_font-size="syncEnabled" ccid_sync_selected_labelsector_font-size="syncEnabled" ccid_sync_normal_labelsector_font-weight="syncEnabled" ccid_sync_pressed_labelsector_font-weight="syncEnabled" ccid_sync_selected_labelsector_font-weight="syncEnabled" ccid_sync_normal_labelsector_text-decoration="syncEnabled" ccid_sync_pressed_labelsector_text-decoration="syncEnabled" ccid_sync_selected_labelsector_text-decoration="syncEnabled" ccid_sync_normal_labelsector_letter-spacing="syncEnabled" ccid_sync_pressed_labelsector_letter-spacing="syncEnabled" ccid_sync_selected_labelsector_letter-spacing="syncEnabled" ccid_sync_normal_labelsector_margin-left="syncEnabled" ccid_sync_pressed_labelsector_margin-left="syncEnabled" ccid_sync_selected_labelsector_margin-left="syncEnabled" ccid_sync_normal_labelsector_margin-top="syncEnabled" ccid_sync_pressed_labelsector_margin-top="syncEnabled" ccid_sync_selected_labelsector_margin-top="syncEnabled" ccid_sync_normal_iconsector_color="syncEnabled" ccid_sync_pressed_iconsector_color="syncEnabled" ccid_sync_selected_iconsector_color="syncEnabled" ccid_sync_normal_iconsector_font-size="syncEnabled" ccid_sync_pressed_iconsector_font-size="syncEnabled" ccid_sync_selected_iconsector_font-size="syncEnabled" ccid_sync_normal_iconsector_margin-left="syncEnabled" ccid_sync_pressed_iconsector_margin-left="syncEnabled" ccid_sync_selected_iconsector_margin-left="syncEnabled" ccid_sync_normal_iconsector_margin-top="syncEnabled" ccid_sync_pressed_iconsector_margin-top="syncEnabled" ccid_sync_selected_iconsector_margin-top="syncEnabled" ccid_sync_normal_appearancesector_border-color_toggle="1" ccid_sync_normal_appearancesector_border-width_toggle="1" ccid_sync_normal_appearancesector_border-style_toggle="1" ccid_sync_normal_appearancesector_border-top-left-radius_toggle="1" ccid_sync_normal_appearancesector_border-top-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle="1" ccid_sync_normal_labelsector_color_toggle="1" ccid_sync_normal_labelsector_font-size_toggle="1" ccid_sync_normal_labelsector_font-weight_toggle="1" ccid_sync_normal_labelsector_text-decoration_toggle="1" ccid_sync_normal_labelsector_letter-spacing_toggle="1" ccid_sync_normal_labelsector_margin-left_toggle="1" ccid_sync_normal_labelsector_margin-top_toggle="1" ccid_sync_normal_iconsector_color_toggle="1" ccid_sync_normal_iconsector_font-size_toggle="1" ccid_sync_normal_iconsector_margin-left_toggle="1" ccid_sync_normal_iconsector_margin-top_toggle="1" ccid_customsizeset="true" sendeventontouch="Contract Enabled" ccid_sync_pressed_appearancesector_border-color_toggle="1" ccid_sync_pressed_appearancesector_border-width_toggle="1" ccid_sync_pressed_appearancesector_border-style_toggle="1" ccid_sync_pressed_appearancesector_border-top-left-radius_toggle="1" ccid_sync_pressed_appearancesector_border-top-right-radius_toggle="1" ccid_sync_pressed_appearancesector_border-bottom-right-radius_toggle="1" ccid_sync_pressed_appearancesector_border-bottom-left-radius_toggle="1" ccid_sync_pressed_labelsector_color_toggle="1" ccid_sync_pressed_labelsector_font-size_toggle="1" ccid_sync_pressed_labelsector_font-weight_toggle="1" ccid_sync_pressed_labelsector_text-decoration_toggle="1" ccid_sync_pressed_labelsector_letter-spacing_toggle="1" ccid_sync_pressed_labelsector_margin-left_toggle="1" ccid_sync_pressed_labelsector_margin-top_toggle="1" ccid_sync_pressed_iconsector_color_toggle="1" ccid_sync_pressed_iconsector_font-size_toggle="1" ccid_sync_pressed_iconsector_margin-left_toggle="1" ccid_sync_pressed_iconsector_margin-top_toggle="1" oldid="inp7k"></ch5-button><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="iyd091eim88td" componentname="Previous.Win5" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_label="<p><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" oldid="ihu6x7911csi1"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="ihu6x7911csi1" componentname="Previous.Win4" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_label="<p><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" oldid="i3ubrbwlivcf8"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="i3ubrbwlivcf8" componentname="Previous.Win3" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_label="<p><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" oldid="i601byze43ody"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="i601byze43ody" componentname="Previous.Win2" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_label="<p><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" oldid="ivz3i"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="left" verticalalignment="top" multilinesupport="false" truncatetext="false" id="i9xk9" componentname="RemainingBetCount" ccid_activefont="'Roboto'" ccid_label="<p><ch5-jointotext-numeric id=&quot;i4ka&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;i4ka&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true">
+              </ch5-text><div data-mytext="myText" componentname="Html-text" id="i87vk" ccid_componenttype="Html-text" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]">Bets Remaining:</div><div data-mytext="myText" componentname="dollars.label2" id="ifzexcv514usq" ccid_componenttype="Html-text" ccid_activefont="'Roboto'" devicesvisited="[]" oldid="iemqn">dollars</div><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="iy28wpt4jv5ln" componentname="Total.Bet" ccid_activefont="'Roboto'" ccid_label="<p><ch5-jointotext-numeric id=&quot;im93&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" labelinnerhtml="<p><ch5-jointotext-numeric id=&quot;im93&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[]" ccid_themecssset="true" oldid="i9fpe"></ch5-text><h1 headingtype="h1" data-mytext="myText" componentname="TotalBet.Title" id="iyxow30dwwhy4" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[]" oldid="i5evg">Total Bet</h1><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="left" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="i2fx9" componentname="Payouts.List" ccid_activefont="'Roboto'" ccid_label="<p>Straight - 35:1<br>Split - 17:1<br>Street - 11:1<br>Corner - 8:1<br>Line - 5:1<br>Set of 12 - 2:1<br>Column - 2:1<br>Even/Odd: 2:1<br>Black/Red: 2:1<br>High/Low - 2:1</p>" labelinnerhtml="<p>Straight - 35:1<br>Split - 17:1<br>Street - 11:1<br>Corner - 8:1<br>Line - 5:1<br>Set of 12 - 2:1<br>Column - 2:1<br>Even/Odd: 2:1<br>Black/Red: 2:1<br>High/Low - 2:1</p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true">
+              </ch5-text><ch5-template transitionduration="1s" transitiondelay="0s" templateid="w8d98c530-221e-41db-9353-254809899916" id="ikczm" componentname="Wheel" ccid_componenttype="Widget" ccid_widgetname="Wheel" devicesvisited="[&quot;Landscape 1080p&quot;]" pd-receivestateshow="Contract Enabled"></ch5-template><h1 headingtype="h1" data-mytext="myText" componentname="Payouts.Title" id="i240ngjnzfxkc" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]" oldid="i3fg8">Payouts</h1><h1 headingtype="h1" data-mytext="myText" componentname="Total.Winnings.Title" id="iisc5534m6bfe" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]" oldid="i9klp">TOTAL WINNINGS</h1><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="i0wy898gsrx9v" componentname="Winning.Amount" ccid_activefont="'Roboto'" ccid_label="<p><ch5-jointotext-numeric id=&quot;ik14&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" labelinnerhtml="<p><ch5-jointotext-numeric id=&quot;ik14&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" oldid="ieum3"></ch5-text><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="ieum3" componentname="Winning.Number" ccid_activefont="'Roboto'" ccid_label="<p><ch5-jointotext-numeric receivestatevalue=&quot;1&quot; length=&quot;2&quot; type=&quot;signed&quot;></ch5-jointotext-numeric></p>" labelinnerhtml="<p><ch5-jointotext-numeric receivestatevalue=&quot;1&quot; length=&quot;2&quot; type=&quot;signed&quot;></ch5-jointotext-numeric></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true">
+              </ch5-text><h1 headingtype="h1" data-mytext="myText" componentname="Winning.Number.Title" id="i9klp" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]">WINNING NUMBER</h1><div data-mytext="myText" componentname="dollars.label" id="iemqn" ccid_componenttype="Html-text" ccid_activefont="'Roboto'" devicesvisited="[]">dollars</div><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="false" truncatetext="false" id="i9fpe" componentname="Amount.Bank" ccid_activefont="'Roboto'" ccid_label="<p><ch5-jointotext-numeric id=&quot;ij2a&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" labelinnerhtml="<p><ch5-jointotext-numeric id=&quot;ij2a&quot; receivestatevalue=&quot;Analog&quot; length=&quot;5&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true">
+              </ch5-text><h1 headingtype="h1" data-mytext="myText" componentname="Bank.Title" id="i5evg" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[]">Bank</h1><ch5-datetime timeoffsethours="0" tagname="ch5-datetime" horizontalalignment="center" displaytype="time" display24hourformat="false" displayampm="true" displaytwodigitshour="false" displayseconds="false" stylefordate="MM-dd-yyyy" id="i019t" componentname="Date Time" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Date Time" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true">
+              </ch5-datetime><ch5-button orientation="horizontal" size="custom" shape="rounded-rectangle" previewstate="normal" type="default" halignlabel="center" valignlabel="middle" checkboxshow="false" checkboxposition="left" disabled="false" pageflipattributename="pageflip" clearlabel="false" ccid_imageicontype="iconclass" ccid_linksendreceive="False" iconurlfilltype="initial" customclass="ccid-custom" affectedbypreviewstate="True" iconposition="first" tagname="ch5-button" ccid_syncproperties="syncEnabled" ccid_lastsizeselected="regular" ccid_componenttype="button" ccid_ch5type="button" customvstheme="custom" id="inp7k" componentname="PlaceBet.btn" ccid_activefont="'Roboto'" ccid_label="Spin Wheel" labelinnerhtml="Spin Wheel" assetid="0" pageflip="0" ccid_componenttype="Button" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_sync_normal_appearancesector_background-color="syncDisabled" ccid_sync_normal_appearancesector_background-color_toggle="0" ccid_sync_pressed_appearancesector_background-color="syncDisabled" ccid_sync_pressed_appearancesector_background-color_toggle="0" ccid_sync_selected_appearancesector_background-color="syncDisabled" ccid_sync_selected_appearancesector_background-color_toggle="0" ccid_sync_normal_appearancesector_border-color="syncEnabled" ccid_sync_pressed_appearancesector_border-color="syncEnabled" ccid_sync_selected_appearancesector_border-color="syncEnabled" ccid_sync_normal_appearancesector_border-width="syncEnabled" ccid_sync_pressed_appearancesector_border-width="syncEnabled" ccid_sync_selected_appearancesector_border-width="syncEnabled" ccid_sync_normal_appearancesector_border-style="syncEnabled" ccid_sync_pressed_appearancesector_border-style="syncEnabled" ccid_sync_selected_appearancesector_border-style="syncEnabled" ccid_sync_normal_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-left-radius="syncEnabled" ccid_sync_normal_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-top-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-right-radius="syncEnabled" ccid_sync_normal_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_pressed_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_selected_appearancesector_border-bottom-left-radius="syncEnabled" ccid_sync_normal_labelsector_color="syncEnabled" ccid_sync_pressed_labelsector_color="syncEnabled" ccid_sync_selected_labelsector_color="syncEnabled" ccid_sync_normal_labelsector_font-size="syncEnabled" ccid_sync_pressed_labelsector_font-size="syncEnabled" ccid_sync_selected_labelsector_font-size="syncEnabled" ccid_sync_normal_labelsector_font-weight="syncEnabled" ccid_sync_pressed_labelsector_font-weight="syncEnabled" ccid_sync_selected_labelsector_font-weight="syncEnabled" ccid_sync_normal_labelsector_text-decoration="syncEnabled" ccid_sync_pressed_labelsector_text-decoration="syncEnabled" ccid_sync_selected_labelsector_text-decoration="syncEnabled" ccid_sync_normal_labelsector_letter-spacing="syncEnabled" ccid_sync_pressed_labelsector_letter-spacing="syncEnabled" ccid_sync_selected_labelsector_letter-spacing="syncEnabled" ccid_sync_normal_labelsector_margin-left="syncEnabled" ccid_sync_pressed_labelsector_margin-left="syncEnabled" ccid_sync_selected_labelsector_margin-left="syncEnabled" ccid_sync_normal_labelsector_margin-top="syncEnabled" ccid_sync_pressed_labelsector_margin-top="syncEnabled" ccid_sync_selected_labelsector_margin-top="syncEnabled" ccid_sync_normal_iconsector_color="syncEnabled" ccid_sync_pressed_iconsector_color="syncEnabled" ccid_sync_selected_iconsector_color="syncEnabled" ccid_sync_normal_iconsector_font-size="syncEnabled" ccid_sync_pressed_iconsector_font-size="syncEnabled" ccid_sync_selected_iconsector_font-size="syncEnabled" ccid_sync_normal_iconsector_margin-left="syncEnabled" ccid_sync_pressed_iconsector_margin-left="syncEnabled" ccid_sync_selected_iconsector_margin-left="syncEnabled" ccid_sync_normal_iconsector_margin-top="syncEnabled" ccid_sync_pressed_iconsector_margin-top="syncEnabled" ccid_sync_selected_iconsector_margin-top="syncEnabled" ccid_sync_normal_appearancesector_border-color_toggle="1" ccid_sync_normal_appearancesector_border-width_toggle="1" ccid_sync_normal_appearancesector_border-style_toggle="1" ccid_sync_normal_appearancesector_border-top-left-radius_toggle="1" ccid_sync_normal_appearancesector_border-top-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle="1" ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle="1" ccid_sync_normal_labelsector_color_toggle="1" ccid_sync_normal_labelsector_font-size_toggle="1" ccid_sync_normal_labelsector_font-weight_toggle="1" ccid_sync_normal_labelsector_text-decoration_toggle="1" ccid_sync_normal_labelsector_letter-spacing_toggle="1" ccid_sync_normal_labelsector_margin-left_toggle="1" ccid_sync_normal_labelsector_margin-top_toggle="1" ccid_sync_normal_iconsector_color_toggle="1" ccid_sync_normal_iconsector_font-size_toggle="1" ccid_sync_normal_iconsector_margin-left_toggle="1" ccid_sync_normal_iconsector_margin-top_toggle="1" ccid_customsizeset="true" sendeventontouch="Contract Enabled" ccid_sync_pressed_appearancesector_border-color_toggle="1" ccid_sync_pressed_appearancesector_border-width_toggle="1" ccid_sync_pressed_appearancesector_border-style_toggle="1" ccid_sync_pressed_appearancesector_border-top-left-radius_toggle="1" ccid_sync_pressed_appearancesector_border-top-right-radius_toggle="1" ccid_sync_pressed_appearancesector_border-bottom-right-radius_toggle="1" ccid_sync_pressed_appearancesector_border-bottom-left-radius_toggle="1" ccid_sync_pressed_labelsector_color_toggle="1" ccid_sync_pressed_labelsector_font-size_toggle="1" ccid_sync_pressed_labelsector_font-weight_toggle="1" ccid_sync_pressed_labelsector_text-decoration_toggle="1" ccid_sync_pressed_labelsector_letter-spacing_toggle="1" ccid_sync_pressed_labelsector_margin-left_toggle="1" ccid_sync_pressed_labelsector_margin-top_toggle="1" ccid_sync_pressed_iconsector_color_toggle="1" ccid_sync_pressed_iconsector_font-size_toggle="1" ccid_sync_pressed_iconsector_margin-left_toggle="1" ccid_sync_pressed_iconsector_margin-top_toggle="1">
+              </ch5-button><h1 headingtype="h1" data-mytext="myText" componentname="PrevWinners.Title" id="i3fg8" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]">Previous Winners</h1><ch5-text clearlabel="false" labelmodeadvncomponent="advanced" horizontalalignment="center" verticalalignment="middle" multilinesupport="true" truncatetext="false" id="ivz3i" componentname="Previous.Win1" ccid_activefont="'Roboto'" ccid_linksendreceive="True" ccid_componenttype="Formatted-Text" devicesvisited="[&quot;Landscape 1080p&quot;]" ccid_themecssset="true" labelinnerhtml="<p style=&quot;margin-block-start: 0em!important;margin-block-end: 0em!important;&quot;><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>" ccid_label="<p><ch5-jointotext-numeric id=&quot;iet3&quot; receivestatevalue=&quot;Analog&quot; length=&quot;2&quot; type=&quot;unsigned&quot;></ch5-jointotext-numeric></p>">
+              </ch5-text><ch5-template transitionduration="1s" transitiondelay="0s" templateid="wa87704ab-9833-4b10-909a-7f01ed376ff6" id="imqcp" componentname="Roulette Buttons" ccid_componenttype="Widget" ccid_widgetname="Roulette Table" devicesvisited="[&quot;Landscape 1080p&quot;]"></ch5-template><h2 headingtype="h2" data-mytext="myText" componentname="Bet.Title" id="i1k9" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[]">Bet:</h2><ch5-textinput iconposition="first" size="small" type="number" minlength="0" maxlength="0" minvalue="0" maxvalue="0" text-transform="none" scaling="false" customvstheme="custom" id="i1o9" componentname="Amount.Bet" ccid_linksendreceive="False" ccid_activefont="'Roboto'" ccid_label="" ccid_sizeinitialized ccid_componenttype="Textinput" devicesvisited="[]" ccid_customsizeset="true" ccid_lastsizeselected="small" placeholder="Set amount per chip" iconclass="fa-solid fa-dollar-sign" sendeventonchange="Contract Enabled" ccid_iconlibrary="FA Classic Solid">
+              </ch5-textinput><h1 headingtype="h1" data-mytext="myText" componentname="CrestRoulette Title" id="ilbf" ccid_componenttype="Html-header" ccid_activefont="'Roboto'" devicesvisited="[&quot;Landscape 1080p&quot;]">CrestRoulette</h1><html-div labelmode="advanced" ccid_ltehtmlonly="true" componentname="Header.Section" id="ii2g" ccid_componenttype="Html-div" devicesvisited="[&quot;Landscape 1080p&quot;]"></html-div>
+
+{Css}
+@media (max-width: 99999px){#ilbf{overflow:hidden;font-weight:400;font-size:60px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:752px;top:16px;position:absolute;custom-font-size:32px;font-style:normal;text-align:justify;letter-spacing:4px;z-index:38;}#i019t{display:block;left:1689px;top:37px;position:absolute;width:200px;height:49px;--ch5-datetime--font-size:24px;Label_font-size:24px;custom-normal-font-size:24px;--ch5-datetime--height:49px;z-index:45;}#i019t :not(i):not(svg){font-family:"Roboto";}#i9klp{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:#ffffff;background-color:rgba(255,255,255,0);margin:0;left:1602px;top:182px;position:absolute;custom-font-size:32px;font-style:normal;border-style:none;border-width:1px;border-radius:5px 5px 5px 5px;z-index:49;}#inp7k{display:block;left:1271px;top:169px;position:absolute;width:281px;height:106px;--ch5-button--regular-width:281px;--ch5-button--regular-height:106px;--ch5-button--default-border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-button--default-pressed-border-color:#ffffff;pressedAppearance_border-color:#ffffff;--ch5-button--default-selected-border-color:#ffffff;selectedAppearance_border-color:#ffffff;--ch5-button--default-background-color:#0c7600;Appearance_background-color:#0c7600;--ch5-button--regular-font-weight:700;Label_font-weight:700;--ch5-button--regular-pressed-font-weight:700;pressedLabel_font-weight:700;--ch5-button--regular-selected-font-weight:700;selectedLabel_font-weight:700;--ch5-button--default-pressed-background-color:#729a6e;pressedAppearance_background-color:#729a6e;custom-normal-icon-font-size:36px;--ch5-button--regular-pressed-icon-size:36px;pressedIcon_font-size:36px;custom-pressed-icon-font-size:36px;--ch5-button--regular-selected-icon-size:36px;selectedIcon_font-size:36px;custom-selected-icon-font-size:36px;--ch5-button--regular-font-size:36px;undefined:36px;Label_font-size:36px;custom-normal-label-font-size:36px;--ch5-button--regular-pressed-font-size:36px;pressedLabel_font-size:36px;custom-pressed-label-font-size:36px;--ch5-button--regular-selected-font-size:36px;selectedLabel_font-size:36px;custom-selected-label-font-size:36px;z-index:44;}#inp7k .ch5-button :not(i):not(svg){font-family:"Roboto";}#imqcp{display:block;left:49px;top:363px;position:absolute;z-index:41;}#i1k9{overflow:hidden;font-weight:400;font-size:22px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:99px;top:224px;position:absolute;custom-font-size:22px;font-style:normal;Icon_margin-top:0px;Icon_margin-bottom:0px;z-index:40;}#i1o9 :not(i):not(svg){font-family:"Roboto";}#i0wy898gsrx9v{display:block;left:1614px;top:494px;position:absolute;width:250px;height:52px;--ch5-text--width:250px;--ch5-text--height:52px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;--ch5-text--font-size:30px;Label_font-size:30px;custom-normal-font-size:30px;z-index:51;}#iisc5534m6bfe{overflow:hidden;font-weight:400;font-size:32px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:#ffffff;background-color:rgba(255,255,255,0);margin:0;left:1609px;top:424px;position:absolute;custom-font-size:32px;font-style:normal;border-style:none;border-width:1px;border-radius:5px 5px 5px 5px;z-index:52;}#i0wy898gsrx9v .ch5-text{min-height:10;min-width:10;padding:0px;}#iemqn{overflow:hidden;font-size:16px;min-width:1em;min-height:24px;text-underline-offset:0.3em;display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);font-family:'Roboto';left:413px;top:167px;position:absolute;custom-font-size:16px;font-weight:400;font-style:normal;z-index:48;}#i5evg{overflow:hidden;font-weight:400;font-size:22px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:88px;top:149px;position:absolute;custom-font-size:22px;font-style:normal;z-index:46;}#i9fpe{display:block;left:152px;top:139px;position:absolute;width:250px;height:52px;--ch5-text--height:52px;--ch5-text--width:250px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--border-width:2px;Appearance_border-width:2px;--ch5-text--font-size:18px;Label_font-size:18px;custom-normal-font-size:18px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--background-color:rgba(255,255,255,0.09);Appearance_background-color:rgba(255,255,255,0.09);--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:47;}#i9fpe .ch5-text{min-height:10;min-width:10;padding:0px;}#iy28wpt4jv5ln{display:block;left:151px;top:289px;position:absolute;width:250px;height:52px;--ch5-text--height:52px;--ch5-text--width:250px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--border-width:2px;Appearance_border-width:2px;--ch5-text--font-size:18px;Label_font-size:18px;custom-normal-font-size:18px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--background-color:rgba(255,255,255,0.09);Appearance_background-color:rgba(255,255,255,0.09);--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:58;}#iyxow30dwwhy4{overflow:hidden;font-weight:400;font-size:22px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:50px;top:309px;position:absolute;custom-font-size:32px;font-style:normal;z-index:57;}#iy28wpt4jv5ln .ch5-text{min-height:10;min-width:10;padding:0px;}#ifzexcv514usq{overflow:hidden;font-size:16px;min-width:1em;min-height:24px;text-underline-offset:0.3em;display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);font-family:'Roboto';left:413px;top:318px;position:absolute;custom-font-size:16px;font-weight:400;font-style:normal;z-index:59;}#i3fg8{overflow:hidden;font-weight:400;font-size:24px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:1319px;top:682px;position:absolute;custom-font-size:32px;font-style:normal;Label_font-size:10px;z-index:43;}#ivz3i{display:block;left:1319px;top:735px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:42;}#ivz3i .ch5-text{min-height:10;min-width:10;padding:0px;}#i2fx9{display:block;left:1638px;top:721px;position:absolute;width:202px;height:274px;--ch5-text--width:202px;--ch5-text--height:274px;--ch5-text--font-size:24px;Label_font-size:24px;custom-normal-font-size:24px;--ch5-text--background-color:rgba(0,0,0,0);Appearance_background-color:rgba(0,0,0,0);--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-style:none;Appearance_border-style:none;--ch5-text--letter-spacing:1px;Label_letter-spacing:1px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:54;}#i2fx9 .ch5-text{min-height:10;min-width:10;padding:0px;}#i240ngjnzfxkc{overflow:hidden;font-weight:400;font-size:24px;min-width:1em;min-height:1.5em;text-underline-offset:0.3em;font-family:'Roboto';display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);margin:0;left:1696px;top:682px;position:absolute;custom-font-size:32px;font-style:normal;Label_font-size:10px;z-index:53;}#ikczm{display:block;left:1287px;top:320px;position:absolute;z-index:55;}#ieum3{display:block;left:1602px;top:252px;position:absolute;width:273px;height:150px;--ch5-text--width:273px;--ch5-text--height:150px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;--ch5-text--font-size:120px;Label_font-size:120px;custom-normal-font-size:120px;z-index:50;}#ieum3 .ch5-text{min-height:10;min-width:10;padding:0px;}#i87vk{overflow:hidden;font-size:16px;min-width:1em;min-height:24px;text-underline-offset:0.3em;display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);font-family:'Roboto';left:417px;top:230px;position:absolute;custom-font-size:16px;font-weight:400;font-style:normal;z-index:61;}#i9xk9{display:block;left:541px;top:230px;position:absolute;width:40px;height:24px;--ch5-text--width:40px;--ch5-text--height:24px;--ch5-text--font-size:18px;Label_font-size:18px;custom-normal-font-size:18px;z-index:63;}#i9xk9 .ch5-text{min-height:10;min-width:10;padding:0px;}#i601byze43ody{display:block;left:1319px;top:780px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:64;}#i601byze43ody .ch5-text{min-height:10;min-width:10;padding:0px;}#i3ubrbwlivcf8{display:block;left:1319px;top:825px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:66;}#i3ubrbwlivcf8 .ch5-text{min-height:10;min-width:10;padding:0px;}#ihu6x7911csi1{display:block;left:1319px;top:870px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:68;}#ihu6x7911csi1 .ch5-text{min-height:10;min-width:10;padding:0px;}#iyd091eim88td{display:block;left:1319px;top:915px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;z-index:70;}#iyd091eim88td .ch5-text{min-height:10;min-width:10;padding:0px;}#iwawk7nvj9b2y{display:block;left:26px;top:34px;position:absolute;width:132px;height:55px;--ch5-button--regular-width:132px;--ch5-button--regular-height:55px;--ch5-button--default-border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-button--default-pressed-border-color:#ffffff;pressedAppearance_border-color:#ffffff;--ch5-button--default-selected-border-color:#ffffff;selectedAppearance_border-color:#ffffff;--ch5-button--default-background-color:#0c7600;Appearance_background-color:#0c7600;--ch5-button--regular-font-weight:700;Label_font-weight:700;--ch5-button--regular-pressed-font-weight:700;pressedLabel_font-weight:700;--ch5-button--regular-selected-font-weight:700;selectedLabel_font-weight:700;--ch5-button--default-pressed-background-color:#729a6e;pressedAppearance_background-color:#729a6e;custom-normal-icon-font-size:36px;--ch5-button--regular-pressed-icon-size:36px;pressedIcon_font-size:36px;custom-pressed-icon-font-size:36px;--ch5-button--regular-selected-icon-size:36px;selectedIcon_font-size:36px;custom-selected-icon-font-size:36px;--ch5-button--regular-font-size:24px;undefined:24px;Label_font-size:24px;custom-normal-label-font-size:24px;--ch5-button--regular-pressed-font-size:24px;pressedLabel_font-size:24px;custom-pressed-label-font-size:24px;--ch5-button--regular-selected-font-size:24px;selectedLabel_font-size:24px;custom-selected-label-font-size:24px;z-index:73;}#iwawk7nvj9b2y .ch5-button :not(i):not(svg){font-family:"Roboto";}#ii2g{display:block;background-color:#000000;border-style:solid;border-width:5px;border-color:#ffffff;width:1920px;height:120px;left:0px;top:0px;position:absolute;z-index:37;}#int7p{display:block;left:525px;top:139px;position:absolute;width:694px;height:52px;--ch5-text--width:694px;--ch5-text--height:52px;--ch5-text--font-size:20px;Label_font-size:20px;custom-normal-font-size:20px;--ch5-text--font-color:#ff0000;Label_color:#ff0000;--ch5-text--font-weight:700;Label_font-weight:700;z-index:75;}#int7p .ch5-text{min-height:10;min-width:10;padding:0px;}#ic0v{background-color:#000000;}#i1o9{display:block;left:152px;top:214px;position:absolute;width:250px;height:auto;--ch5-textinput--regular-font-size:18px;--ch5-textinput--small-font-size:18px;Label_font-size:18px;custom-main-Label-font-size:18px;--ch5-textinput--regular-icon-font-size:20px;--ch5-textinput--small-icon-font-size:20px;Icon_font-size:20px;custom-main-Icon-font-size:20px;--ch5-textinput--margin-top:0px;Icon_margin-top:0px;--ch5-textinput--margin-bottom:0px;Icon_margin-bottom:0px;--ch5-textinput--input-border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-textinput--input-border-width:2px;Appearance_border-width:2px;--ch5-textinput--input-background-color:rgba(255,255,255,0.09);Appearance_background-color:rgba(255,255,255,0.09);z-index:39;}}@media (orientation: landscape) and (max-width: 1921px) and (max-height: 1081px), (orientation: landscape) and (max-width: 1919px){#iy28wpt4jv5ln{left:151px;top:289px;}#i0wy898gsrx9v{left:1614px;top:494px;height:52px;--ch5-text--height:52px;Label_font-size:30px;--ch5-text--font-size:30px;position:absolute;}#i9fpe{left:152px;top:139px;}#i019t{left:1689px;top:37px;}#inp7k{display:block;left:1271px;top:169px;position:absolute;width:281px;height:106px;--ch5-button--regular-width:281px;--ch5-button--regular-height:106px;--ch5-button--default-border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-button--default-pressed-border-color:#ffffff;pressedAppearance_border-color:#ffffff;--ch5-button--default-selected-border-color:#ffffff;selectedAppearance_border-color:#ffffff;--ch5-button--default-background-color:#0c7600;Appearance_background-color:#0c7600;--ch5-button--regular-font-weight:700;Label_font-weight:700;--ch5-button--regular-pressed-font-weight:700;pressedLabel_font-weight:700;--ch5-button--regular-selected-font-weight:700;selectedLabel_font-weight:700;--ch5-button--default-pressed-background-color:#729a6e;pressedAppearance_background-color:#729a6e;--ch5-button--regular-font-size:36px;undefined:36px;--ch5-button--regular-pressed-font-size:36px;--ch5-button--regular-selected-font-size:36px;}#imqcp{left:49px;top:363px;}#i3fg8{left:1319px;top:682px;position:absolute;custom-font-size:32px;font-style:normal;}#ivz3i{display:block;left:1319px;top:735px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;}#i2fx9{left:1638px;top:721px;Appearance_border-style:none;--ch5-text--border-style:none;}#i240ngjnzfxkc{left:1696px;top:682px;position:absolute;custom-font-size:32px;font-style:normal;}#ikczm{left:1287px;top:320px;position:absolute;}#i9klp{left:1602px;top:182px;position:absolute;custom-font-size:32px;font-style:normal;}#ieum3{left:1602px;top:252px;position:absolute;}#iisc5534m6bfe{left:1609px;top:424px;position:absolute;custom-font-size:32px;font-style:normal;}#i87vk{overflow:hidden;font-size:16px;min-width:1em;min-height:24px;text-underline-offset:0.3em;display:block;color:#ffffff;border-color:black;background-color:rgba(255,255,255,0);font-family:"Roboto";left:417px;top:230px;position:absolute;custom-font-size:16px;font-weight:400;font-style:normal;}#i9xk9{display:block;left:541px;top:230px;position:absolute;width:40px;height:24px;--ch5-text--width:40px;--ch5-text--height:24px;Label_font-size:18px;--ch5-text--font-size:18px;}#i601byze43ody{display:block;left:1319px;top:780px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;}#i3ubrbwlivcf8{display:block;left:1319px;top:825px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;}#ihu6x7911csi1{display:block;left:1319px;top:870px;position:absolute;width:185px;height:28px;--ch5-text--border-width:1px;Appearance_border-width:1px;--ch5-text--border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-text--width:185px;--ch5-text--height:28px;--ch5-text--border-style:solid;Appearance_border-style:solid;--ch5-text--font-size:32px;Label_font-size:32px;custom-normal-font-size:32px;--ch5-text--border-top-left-radius:5px;Appearance_border-top-left-radius:5px;--ch5-text--border-top-right-radius:5px;Appearance_border-top-right-radius:5px;--ch5-text--border-bottom-left-radius:5px;Appearance_border-bottom-left-radius:5px;--ch5-text--border-bottom-right-radius:5px;Appearance_border-bottom-right-radius:5px;}#iyd091eim88td{left:1319px;top:915px;position:absolute;}#ifzexcv514usq{font-size:16px;custom-font-size:16px;font-weight:400;font-style:normal;}#iyxow30dwwhy4{font-style:normal;custom-font-size:32px;}#iemqn{font-size:16px;custom-font-size:16px;font-weight:400;font-style:normal;}#i5evg{font-style:normal;custom-font-size:32px;}#i1k9{font-style:normal;custom-font-size:32px;}#ilbf{font-style:normal;top:16px;custom-font-size:32px;left:752px;}#iwawk7nvj9b2y{display:block;left:26px;top:34px;position:absolute;width:132px;height:55px;--ch5-button--regular-width:132px;--ch5-button--regular-height:55px;--ch5-button--default-border-color:#ffffff;Appearance_border-color:#ffffff;--ch5-button--default-pressed-border-color:#ffffff;pressedAppearance_border-color:#ffffff;--ch5-button--default-selected-border-color:#ffffff;selectedAppearance_border-color:#ffffff;--ch5-button--default-background-color:#0c7600;Appearance_background-color:#0c7600;--ch5-button--regular-font-weight:700;Label_font-weight:700;--ch5-button--regular-pressed-font-weight:700;pressedLabel_font-weight:700;--ch5-button--regular-selected-font-weight:700;selectedLabel_font-weight:700;--ch5-button--default-pressed-background-color:#729a6e;pressedAppearance_background-color:#729a6e;custom-normal-icon-font-size:36px;--ch5-button--regular-pressed-icon-size:36px;pressedIcon_font-size:36px;custom-pressed-icon-font-size:36px;--ch5-button--regular-selected-icon-size:36px;selectedIcon_font-size:36px;custom-selected-icon-font-size:36px;--ch5-button--regular-font-size:24px;undefined:24px;Label_font-size:24px;custom-normal-label-font-size:24px;--ch5-button--regular-pressed-font-size:24px;pressedLabel_font-size:24px;custom-pressed-label-font-size:24px;--ch5-button--regular-selected-font-size:24px;selectedLabel_font-size:24px;custom-selected-label-font-size:24px;}#ii2g{left:0px;top:0px;position:absolute;}#int7p{display:block;left:525px;top:139px;position:absolute;width:694px;height:52px;--ch5-text--width:694px;--ch5-text--height:52px;Label_font-size:20px;--ch5-text--font-size:20px;Label_color:#ff0000;--ch5-text--font-color:#ff0000;Label_font-weight:700;--ch5-text--font-weight:700;}#i1o9{left:152px;top:214px;}}
+
+{PageAttributes}
+
+[Attributes]
+Name = "Main"
+PageMode = "absolute"
+Id = "0e3c4a2d-a7ee-4e92-8940-4c021a95ec3e"
+StartPage = "True"
+PreloadPage = "True"
+CachePage = "False"
+VisibilityJoin = "0"
+DisplayBackgroundColor = "True"
+BackgroundColor = "#000000"
+
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "int7p"
+componentName = "Formatted-Text"
+ccid_ActiveFont = ""
+ccid_Label = "<p><ch5-jointotext-string id=\"i8an\" receivestatevalue=\"Serial\" textwhenempty=\"**Error Message**\"></ch5-jointotext-string></p>"
+labelinnerhtml = "<p><ch5-jointotext-string id=\"i8an\" receivestatevalue=\"Serial\" textwhenempty=\"**Error Message**\"></ch5-jointotext-string></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "Ch5 Button"
+Editable = true
+
+[Elements.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "False"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "syncEnabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "iwawk7nvj9b2y"
+componentName = "Reset.btn"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Reset"
+labelinnerhtml = "Reset"
+assetid = "0"
+pageflip = "0"
+ccid_ComponentType = "Button"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_sync_normal_appearancesector_background-color = "syncDisabled"
+ccid_sync_normal_appearancesector_background-color_toggle = "0"
+ccid_sync_pressed_appearancesector_background-color = "syncDisabled"
+ccid_sync_pressed_appearancesector_background-color_toggle = "0"
+ccid_sync_selected_appearancesector_background-color = "syncDisabled"
+ccid_sync_selected_appearancesector_background-color_toggle = "0"
+ccid_sync_normal_appearancesector_border-color = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-color = "syncEnabled"
+ccid_sync_selected_appearancesector_border-color = "syncEnabled"
+ccid_sync_normal_appearancesector_border-width = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-width = "syncEnabled"
+ccid_sync_selected_appearancesector_border-width = "syncEnabled"
+ccid_sync_normal_appearancesector_border-style = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-style = "syncEnabled"
+ccid_sync_selected_appearancesector_border-style = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_normal_labelsector_color = "syncEnabled"
+ccid_sync_pressed_labelsector_color = "syncEnabled"
+ccid_sync_selected_labelsector_color = "syncEnabled"
+ccid_sync_normal_labelsector_font-size = "syncEnabled"
+ccid_sync_pressed_labelsector_font-size = "syncEnabled"
+ccid_sync_selected_labelsector_font-size = "syncEnabled"
+ccid_sync_normal_labelsector_font-weight = "syncEnabled"
+ccid_sync_pressed_labelsector_font-weight = "syncEnabled"
+ccid_sync_selected_labelsector_font-weight = "syncEnabled"
+ccid_sync_normal_labelsector_text-decoration = "syncEnabled"
+ccid_sync_pressed_labelsector_text-decoration = "syncEnabled"
+ccid_sync_selected_labelsector_text-decoration = "syncEnabled"
+ccid_sync_normal_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_pressed_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_selected_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_normal_labelsector_margin-left = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-left = "syncEnabled"
+ccid_sync_selected_labelsector_margin-left = "syncEnabled"
+ccid_sync_normal_labelsector_margin-top = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-top = "syncEnabled"
+ccid_sync_selected_labelsector_margin-top = "syncEnabled"
+ccid_sync_normal_iconsector_color = "syncEnabled"
+ccid_sync_pressed_iconsector_color = "syncEnabled"
+ccid_sync_selected_iconsector_color = "syncEnabled"
+ccid_sync_normal_iconsector_font-size = "syncEnabled"
+ccid_sync_pressed_iconsector_font-size = "syncEnabled"
+ccid_sync_selected_iconsector_font-size = "syncEnabled"
+ccid_sync_normal_iconsector_margin-left = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-left = "syncEnabled"
+ccid_sync_selected_iconsector_margin-left = "syncEnabled"
+ccid_sync_normal_iconsector_margin-top = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-top = "syncEnabled"
+ccid_sync_selected_iconsector_margin-top = "syncEnabled"
+ccid_sync_normal_appearancesector_border-color_toggle = "1"
+ccid_sync_normal_appearancesector_border-width_toggle = "1"
+ccid_sync_normal_appearancesector_border-style_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-left-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle = "1"
+ccid_sync_normal_labelsector_color_toggle = "1"
+ccid_sync_normal_labelsector_font-size_toggle = "1"
+ccid_sync_normal_labelsector_font-weight_toggle = "1"
+ccid_sync_normal_labelsector_text-decoration_toggle = "1"
+ccid_sync_normal_labelsector_letter-spacing_toggle = "1"
+ccid_sync_normal_labelsector_margin-left_toggle = "1"
+ccid_sync_normal_labelsector_margin-top_toggle = "1"
+ccid_sync_normal_iconsector_color_toggle = "1"
+ccid_sync_normal_iconsector_font-size_toggle = "1"
+ccid_sync_normal_iconsector_margin-left_toggle = "1"
+ccid_sync_normal_iconsector_margin-top_toggle = "1"
+ccid_customSizeSet = "true"
+sendeventontouch = "Contract Enabled"
+ccid_sync_pressed_appearancesector_border-color_toggle = "1"
+ccid_sync_pressed_appearancesector_border-width_toggle = "1"
+ccid_sync_pressed_appearancesector_border-style_toggle = "1"
+ccid_sync_pressed_appearancesector_border-top-left-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-top-right-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-bottom-right-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-bottom-left-radius_toggle = "1"
+ccid_sync_pressed_labelsector_color_toggle = "1"
+ccid_sync_pressed_labelsector_font-size_toggle = "1"
+ccid_sync_pressed_labelsector_font-weight_toggle = "1"
+ccid_sync_pressed_labelsector_text-decoration_toggle = "1"
+ccid_sync_pressed_labelsector_letter-spacing_toggle = "1"
+ccid_sync_pressed_labelsector_margin-left_toggle = "1"
+ccid_sync_pressed_labelsector_margin-top_toggle = "1"
+ccid_sync_pressed_iconsector_color_toggle = "1"
+ccid_sync_pressed_iconsector_font-size_toggle = "1"
+ccid_sync_pressed_iconsector_margin-left_toggle = "1"
+ccid_sync_pressed_iconsector_margin-top_toggle = "1"
+oldID = "inp7k"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "iyd091eim88td"
+componentName = "Previous.Win5"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+oldID = "ihu6x7911csi1"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "ihu6x7911csi1"
+componentName = "Previous.Win4"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+oldID = "i3ubrbwlivcf8"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "i3ubrbwlivcf8"
+componentName = "Previous.Win3"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+oldID = "i601byze43ody"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "i601byze43ody"
+componentName = "Previous.Win2"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+oldID = "ivz3i"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "left"
+verticalalignment = "top"
+multilinesupport = "false"
+truncatetext = "false"
+id = "i9xk9"
+componentName = "RemainingBetCount"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"i4ka\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"i4ka\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+[[Elements]]
+Type = "html-text"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Bets Remaining:"
+
+[Elements.Attributes]
+data-mytext = "myText"
+componentName = "Html-text"
+id = "i87vk"
+ccid_ComponentType = "Html-text"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+[[Elements]]
+Type = "html-text"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "dollars"
+
+[Elements.Attributes]
+data-mytext = "myText"
+componentName = "dollars.label2"
+id = "ifzexcv514usq"
+ccid_ComponentType = "Html-text"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[]"
+oldID = "iemqn"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "iy28wpt4jv5ln"
+componentName = "Total.Bet"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"im93\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+labelinnerhtml = "<p><ch5-jointotext-numeric id=\"im93\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[]"
+ccid_themeCSSSet = "true"
+oldID = "i9fpe"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Total Bet"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "TotalBet.Title"
+id = "iyxow30dwwhy4"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[]"
+oldID = "i5evg"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "left"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "i2fx9"
+componentName = "Payouts.List"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p>Straight - 35:1<br>Split - 17:1<br>Street - 11:1<br>Corner - 8:1<br>Line - 5:1<br>Set of 12 - 2:1<br>Column - 2:1<br>Even/Odd: 2:1<br>Black/Red: 2:1<br>High/Low - 2:1</p>"
+labelinnerhtml = "<p>Straight - 35:1<br>Split - 17:1<br>Street - 11:1<br>Corner - 8:1<br>Line - 5:1<br>Set of 12 - 2:1<br>Column - 2:1<br>Even/Odd: 2:1<br>Black/Red: 2:1<br>High/Low - 2:1</p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+transitionduration = "1s"
+transitiondelay = "0s"
+templateid = "w8d98c530-221e-41db-9353-254809899916"
+id = "ikczm"
+componentName = "Wheel"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "Wheel"
+devicesVisited = "[\"Landscape 1080p\"]"
+pd-receivestateshow = "Contract Enabled"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Payouts"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Payouts.Title"
+id = "i240ngjnzfxkc"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+oldID = "i3fg8"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "TOTAL WINNINGS"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Total.Winnings.Title"
+id = "iisc5534m6bfe"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+oldID = "i9klp"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "i0wy898gsrx9v"
+componentName = "Winning.Amount"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"ik14\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+labelinnerhtml = "<p><ch5-jointotext-numeric id=\"ik14\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+oldID = "ieum3"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "ieum3"
+componentName = "Winning.Number"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p><ch5-jointotext-numeric receivestatevalue=\"1\" length=\"2\" type=\"signed\"></ch5-jointotext-numeric></p>"
+labelinnerhtml = "<p><ch5-jointotext-numeric receivestatevalue=\"1\" length=\"2\" type=\"signed\"></ch5-jointotext-numeric></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "WINNING NUMBER"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Winning.Number.Title"
+id = "i9klp"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+[[Elements]]
+Type = "html-text"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "dollars"
+
+[Elements.Attributes]
+data-mytext = "myText"
+componentName = "dollars.label"
+id = "iemqn"
+ccid_ComponentType = "Html-text"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[]"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "false"
+truncatetext = "false"
+id = "i9fpe"
+componentName = "Amount.Bank"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"ij2a\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+labelinnerhtml = "<p><ch5-jointotext-numeric id=\"ij2a\" receivestatevalue=\"Analog\" length=\"5\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Bank"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "Bank.Title"
+id = "i5evg"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[]"
+[[Elements]]
+Type = "Ch5 Date Time"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+timeoffsethours = "0"
+tagName = "ch5-datetime"
+horizontalalignment = "center"
+displaytype = "time"
+display24hourformat = "false"
+displayampm = "true"
+displaytwodigitshour = "false"
+displayseconds = "false"
+stylefordate = "MM-dd-yyyy"
+id = "i019t"
+componentName = "Date Time"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Date Time"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+[[Elements]]
+Type = "Ch5 Button"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+orientation = "horizontal"
+size = "custom"
+shape = "rounded-rectangle"
+previewstate = "normal"
+type = "default"
+halignlabel = "center"
+valignlabel = "middle"
+checkboxshow = "false"
+checkboxposition = "left"
+disabled = "false"
+pageFlipAttributeName = "pageflip"
+clearLabel = "false"
+ccid_imageIconType = "iconclass"
+ccid_linkSendReceive = "False"
+iconurlfilltype = "initial"
+customclass = "ccid-custom"
+affectedByPreviewState = "True"
+iconposition = "first"
+tagName = "ch5-button"
+ccid_syncproperties = "syncEnabled"
+ccid_lastSizeSelected = "regular"
+ccid_componenttype = "button"
+ccid_ch5Type = "button"
+customvstheme = "custom"
+id = "inp7k"
+componentName = "PlaceBet.btn"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = "Spin Wheel"
+labelinnerhtml = "Spin Wheel"
+assetid = "0"
+pageflip = "0"
+ccid_ComponentType = "Button"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_sync_normal_appearancesector_background-color = "syncDisabled"
+ccid_sync_normal_appearancesector_background-color_toggle = "0"
+ccid_sync_pressed_appearancesector_background-color = "syncDisabled"
+ccid_sync_pressed_appearancesector_background-color_toggle = "0"
+ccid_sync_selected_appearancesector_background-color = "syncDisabled"
+ccid_sync_selected_appearancesector_background-color_toggle = "0"
+ccid_sync_normal_appearancesector_border-color = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-color = "syncEnabled"
+ccid_sync_selected_appearancesector_border-color = "syncEnabled"
+ccid_sync_normal_appearancesector_border-width = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-width = "syncEnabled"
+ccid_sync_selected_appearancesector_border-width = "syncEnabled"
+ccid_sync_normal_appearancesector_border-style = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-style = "syncEnabled"
+ccid_sync_selected_appearancesector_border-style = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-left-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-top-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-right-radius = "syncEnabled"
+ccid_sync_normal_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_pressed_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_selected_appearancesector_border-bottom-left-radius = "syncEnabled"
+ccid_sync_normal_labelsector_color = "syncEnabled"
+ccid_sync_pressed_labelsector_color = "syncEnabled"
+ccid_sync_selected_labelsector_color = "syncEnabled"
+ccid_sync_normal_labelsector_font-size = "syncEnabled"
+ccid_sync_pressed_labelsector_font-size = "syncEnabled"
+ccid_sync_selected_labelsector_font-size = "syncEnabled"
+ccid_sync_normal_labelsector_font-weight = "syncEnabled"
+ccid_sync_pressed_labelsector_font-weight = "syncEnabled"
+ccid_sync_selected_labelsector_font-weight = "syncEnabled"
+ccid_sync_normal_labelsector_text-decoration = "syncEnabled"
+ccid_sync_pressed_labelsector_text-decoration = "syncEnabled"
+ccid_sync_selected_labelsector_text-decoration = "syncEnabled"
+ccid_sync_normal_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_pressed_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_selected_labelsector_letter-spacing = "syncEnabled"
+ccid_sync_normal_labelsector_margin-left = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-left = "syncEnabled"
+ccid_sync_selected_labelsector_margin-left = "syncEnabled"
+ccid_sync_normal_labelsector_margin-top = "syncEnabled"
+ccid_sync_pressed_labelsector_margin-top = "syncEnabled"
+ccid_sync_selected_labelsector_margin-top = "syncEnabled"
+ccid_sync_normal_iconsector_color = "syncEnabled"
+ccid_sync_pressed_iconsector_color = "syncEnabled"
+ccid_sync_selected_iconsector_color = "syncEnabled"
+ccid_sync_normal_iconsector_font-size = "syncEnabled"
+ccid_sync_pressed_iconsector_font-size = "syncEnabled"
+ccid_sync_selected_iconsector_font-size = "syncEnabled"
+ccid_sync_normal_iconsector_margin-left = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-left = "syncEnabled"
+ccid_sync_selected_iconsector_margin-left = "syncEnabled"
+ccid_sync_normal_iconsector_margin-top = "syncEnabled"
+ccid_sync_pressed_iconsector_margin-top = "syncEnabled"
+ccid_sync_selected_iconsector_margin-top = "syncEnabled"
+ccid_sync_normal_appearancesector_border-color_toggle = "1"
+ccid_sync_normal_appearancesector_border-width_toggle = "1"
+ccid_sync_normal_appearancesector_border-style_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-left-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-top-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-right-radius_toggle = "1"
+ccid_sync_normal_appearancesector_border-bottom-left-radius_toggle = "1"
+ccid_sync_normal_labelsector_color_toggle = "1"
+ccid_sync_normal_labelsector_font-size_toggle = "1"
+ccid_sync_normal_labelsector_font-weight_toggle = "1"
+ccid_sync_normal_labelsector_text-decoration_toggle = "1"
+ccid_sync_normal_labelsector_letter-spacing_toggle = "1"
+ccid_sync_normal_labelsector_margin-left_toggle = "1"
+ccid_sync_normal_labelsector_margin-top_toggle = "1"
+ccid_sync_normal_iconsector_color_toggle = "1"
+ccid_sync_normal_iconsector_font-size_toggle = "1"
+ccid_sync_normal_iconsector_margin-left_toggle = "1"
+ccid_sync_normal_iconsector_margin-top_toggle = "1"
+ccid_customSizeSet = "true"
+sendeventontouch = "Contract Enabled"
+ccid_sync_pressed_appearancesector_border-color_toggle = "1"
+ccid_sync_pressed_appearancesector_border-width_toggle = "1"
+ccid_sync_pressed_appearancesector_border-style_toggle = "1"
+ccid_sync_pressed_appearancesector_border-top-left-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-top-right-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-bottom-right-radius_toggle = "1"
+ccid_sync_pressed_appearancesector_border-bottom-left-radius_toggle = "1"
+ccid_sync_pressed_labelsector_color_toggle = "1"
+ccid_sync_pressed_labelsector_font-size_toggle = "1"
+ccid_sync_pressed_labelsector_font-weight_toggle = "1"
+ccid_sync_pressed_labelsector_text-decoration_toggle = "1"
+ccid_sync_pressed_labelsector_letter-spacing_toggle = "1"
+ccid_sync_pressed_labelsector_margin-left_toggle = "1"
+ccid_sync_pressed_labelsector_margin-top_toggle = "1"
+ccid_sync_pressed_iconsector_color_toggle = "1"
+ccid_sync_pressed_iconsector_font-size_toggle = "1"
+ccid_sync_pressed_iconsector_margin-left_toggle = "1"
+ccid_sync_pressed_iconsector_margin-top_toggle = "1"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Previous Winners"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "PrevWinners.Title"
+id = "i3fg8"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+[[Elements]]
+Type = "Ch5 Text"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+clearLabel = "false"
+labelmodeadvncomponent = "advanced"
+horizontalalignment = "center"
+verticalalignment = "middle"
+multilinesupport = "true"
+truncatetext = "false"
+id = "ivz3i"
+componentName = "Previous.Win1"
+ccid_ActiveFont = "'Roboto'"
+ccid_linkSendReceive = "True"
+ccid_ComponentType = "Formatted-Text"
+devicesVisited = "[\"Landscape 1080p\"]"
+ccid_themeCSSSet = "true"
+labelinnerhtml = "<p style=\"margin-block-start: 0em!important;margin-block-end: 0em!important;\"><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+ccid_Label = "<p><ch5-jointotext-numeric id=\"iet3\" receivestatevalue=\"Analog\" length=\"2\" type=\"unsigned\"></ch5-jointotext-numeric></p>"
+[[Elements]]
+Type = "Ch5 Template"
+
+[Elements.Attributes]
+transitionduration = "1s"
+transitiondelay = "0s"
+templateid = "wa87704ab-9833-4b10-909a-7f01ed376ff6"
+id = "imqcp"
+componentName = "Roulette Buttons"
+ccid_ComponentType = "Widget"
+ccid_WidgetName = "Roulette Table"
+devicesVisited = "[\"Landscape 1080p\"]"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "Bet:"
+
+[Elements.Attributes]
+headingType = "h2"
+data-mytext = "myText"
+componentName = "Bet.Title"
+id = "i1k9"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[]"
+[[Elements]]
+Type = "Ch5 Textinput"
+Editable = true
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "\n              "
+
+[Elements.Attributes]
+iconposition = "first"
+size = "small"
+type = "number"
+minlength = "0"
+maxlength = "0"
+minvalue = "0"
+maxvalue = "0"
+text-transform = "none"
+scaling = "false"
+customvstheme = "custom"
+id = "i1o9"
+componentName = "Amount.Bet"
+ccid_linkSendReceive = "False"
+ccid_ActiveFont = "'Roboto'"
+ccid_Label = ""
+ccid_sizeInitialized = "true"
+ccid_ComponentType = "Textinput"
+devicesVisited = "[]"
+ccid_customSizeSet = "true"
+ccid_lastSizeSelected = "small"
+placeholder = "Set amount per chip"
+iconclass = "fa-solid fa-dollar-sign"
+sendeventonchange = "Contract Enabled"
+ccid_iconlibrary = "FA Classic Solid"
+[[Elements]]
+Type = "html-header"
+
+[[Elements.Components]]
+Type = "textnode"
+Content = "CrestRoulette"
+
+[Elements.Attributes]
+headingType = "h1"
+data-mytext = "myText"
+componentName = "CrestRoulette Title"
+id = "ilbf"
+ccid_ComponentType = "Html-header"
+ccid_ActiveFont = "'Roboto'"
+devicesVisited = "[\"Landscape 1080p\"]"
+[[Elements]]
+Type = "html-div"
+
+[Elements.Attributes]
+labelmode = "advanced"
+ccid_lteHTMLOnly = "true"
+componentName = "Header.Section"
+id = "ii2g"
+ccid_ComponentType = "Html-div"
+devicesVisited = "[\"Landscape 1080p\"]"
+

@@ -1,0 +1,818 @@
+{
+  "name": "Roulette",
+  "timestamp": "2026-07-20T01:40:21.4182183+00:00",
+  "version": "1.0.0.0",
+  "schema_version": 1,
+  "extra_value": "",
+  "signals": {
+    "states": {
+      "boolean": {
+        "1": {
+          "1": "Main.FormattedText.Visibility_fb"
+        },
+        "2": {
+          "3": "Main.RouletteButtons.Black.Selected",
+          "4": "Main.RouletteButtons.Column1.Selected",
+          "5": "Main.RouletteButtons.Column2.Selected",
+          "6": "Main.RouletteButtons.Column3.Selected",
+          "7": "Main.RouletteButtons.Corner10111314.Selected",
+          "8": "Main.RouletteButtons.Corner11121415.Selected",
+          "9": "Main.RouletteButtons.Corner1245.Selected",
+          "10": "Main.RouletteButtons.Corner13141617.Selected",
+          "11": "Main.RouletteButtons.Corner14151718.Selected",
+          "12": "Main.RouletteButtons.Corner16171920.Selected",
+          "13": "Main.RouletteButtons.Corner17182021.Selected",
+          "14": "Main.RouletteButtons.Corner19202223.Selected",
+          "15": "Main.RouletteButtons.Corner20212324.Selected",
+          "16": "Main.RouletteButtons.Corner22232526.Selected",
+          "17": "Main.RouletteButtons.Corner23242627.Selected",
+          "18": "Main.RouletteButtons.Corner2356.Selected",
+          "19": "Main.RouletteButtons.Corner25262829.Selected",
+          "20": "Main.RouletteButtons.Corner26272930.Selected",
+          "21": "Main.RouletteButtons.Corner28293132.Selected",
+          "22": "Main.RouletteButtons.Corner29303233.Selected",
+          "23": "Main.RouletteButtons.Corner31323435.Selected",
+          "24": "Main.RouletteButtons.Corner32333536.Selected",
+          "25": "Main.RouletteButtons.Corner4578.Selected",
+          "26": "Main.RouletteButtons.Corner5689.Selected",
+          "27": "Main.RouletteButtons.Corner781011.Selected",
+          "28": "Main.RouletteButtons.Corner891112.Selected",
+          "29": "Main.RouletteButtons.Even.Selected",
+          "30": "Main.RouletteButtons.First12.Selected",
+          "31": "Main.RouletteButtons.High.Selected",
+          "32": "Main.RouletteButtons.Line1013.Selected",
+          "33": "Main.RouletteButtons.Line1316.Selected",
+          "34": "Main.RouletteButtons.Line14.Selected",
+          "35": "Main.RouletteButtons.Line1619.Selected",
+          "36": "Main.RouletteButtons.Line1922.Selected",
+          "37": "Main.RouletteButtons.Line2225.Selected",
+          "38": "Main.RouletteButtons.Line2528.Selected",
+          "39": "Main.RouletteButtons.Line2831.Selected",
+          "40": "Main.RouletteButtons.Line3134.Selected",
+          "41": "Main.RouletteButtons.Line47.Selected",
+          "42": "Main.RouletteButtons.Line710.Selected",
+          "43": "Main.RouletteButtons.Low.Selected",
+          "44": "Main.RouletteButtons.Odd.Selected",
+          "45": "Main.RouletteButtons.Red.Selected",
+          "46": "Main.RouletteButtons.Second12.Selected",
+          "47": "Main.RouletteButtons.Split1011.Selected",
+          "48": "Main.RouletteButtons.Split1013.Selected",
+          "49": "Main.RouletteButtons.Split1112.Selected",
+          "50": "Main.RouletteButtons.Split1114.Selected",
+          "51": "Main.RouletteButtons.Split12.Selected",
+          "52": "Main.RouletteButtons.Split1215.Selected",
+          "53": "Main.RouletteButtons.Split1314.Selected",
+          "54": "Main.RouletteButtons.Split1316.Selected",
+          "55": "Main.RouletteButtons.Split14.Selected",
+          "56": "Main.RouletteButtons.Split1415.Selected",
+          "57": "Main.RouletteButtons.Split1417.Selected",
+          "58": "Main.RouletteButtons.Split1518.Selected",
+          "59": "Main.RouletteButtons.Split1617.Selected",
+          "60": "Main.RouletteButtons.Split1619.Selected",
+          "61": "Main.RouletteButtons.Split1718.Selected",
+          "62": "Main.RouletteButtons.Split1720.Selected",
+          "63": "Main.RouletteButtons.Split1821.Selected",
+          "64": "Main.RouletteButtons.Split1920.Selected",
+          "65": "Main.RouletteButtons.Split1922.Selected",
+          "66": "Main.RouletteButtons.Split2021.Selected",
+          "67": "Main.RouletteButtons.Split2023.Selected",
+          "68": "Main.RouletteButtons.Split2124.Selected",
+          "69": "Main.RouletteButtons.Split2223.Selected",
+          "70": "Main.RouletteButtons.Split2225.Selected",
+          "71": "Main.RouletteButtons.Split23.Selected",
+          "72": "Main.RouletteButtons.Split2324.Selected",
+          "73": "Main.RouletteButtons.Split2326.Selected",
+          "74": "Main.RouletteButtons.Split2427.Selected",
+          "75": "Main.RouletteButtons.Split25.Selected",
+          "76": "Main.RouletteButtons.Split2526.Selected",
+          "77": "Main.RouletteButtons.Split2528.Selected",
+          "78": "Main.RouletteButtons.Split2627.Selected",
+          "79": "Main.RouletteButtons.Split2629.Selected",
+          "80": "Main.RouletteButtons.Split2730.Selected",
+          "81": "Main.RouletteButtons.Split2829.Selected",
+          "82": "Main.RouletteButtons.Split2831.Selected",
+          "83": "Main.RouletteButtons.Split2930.Selected",
+          "84": "Main.RouletteButtons.Split2932.Selected",
+          "85": "Main.RouletteButtons.Split3033.Selected",
+          "86": "Main.RouletteButtons.Split3132.Selected",
+          "87": "Main.RouletteButtons.Split3134.Selected",
+          "88": "Main.RouletteButtons.Split3233.Selected",
+          "89": "Main.RouletteButtons.Split3235.Selected",
+          "90": "Main.RouletteButtons.Split3336.Selected",
+          "91": "Main.RouletteButtons.Split3435.Selected",
+          "92": "Main.RouletteButtons.Split3536.Selected",
+          "93": "Main.RouletteButtons.Split36.Selected",
+          "94": "Main.RouletteButtons.Split45.Selected",
+          "95": "Main.RouletteButtons.Split47.Selected",
+          "96": "Main.RouletteButtons.Split56.Selected",
+          "97": "Main.RouletteButtons.Split58.Selected",
+          "98": "Main.RouletteButtons.Split69.Selected",
+          "99": "Main.RouletteButtons.Split710.Selected",
+          "100": "Main.RouletteButtons.Split78.Selected",
+          "101": "Main.RouletteButtons.Split811.Selected",
+          "102": "Main.RouletteButtons.Split89.Selected",
+          "103": "Main.RouletteButtons.Split912.Selected",
+          "104": "Main.RouletteButtons.Straight1.Selected",
+          "105": "Main.RouletteButtons.Straight10.Selected",
+          "106": "Main.RouletteButtons.Straight11.Selected",
+          "107": "Main.RouletteButtons.Straight12.Selected",
+          "108": "Main.RouletteButtons.Straight13.Selected",
+          "109": "Main.RouletteButtons.Straight14.Selected",
+          "110": "Main.RouletteButtons.Straight15.Selected",
+          "111": "Main.RouletteButtons.Straight16.Selected",
+          "112": "Main.RouletteButtons.Straight17.Selected",
+          "113": "Main.RouletteButtons.Straight18.Selected",
+          "114": "Main.RouletteButtons.Straight19.Selected",
+          "115": "Main.RouletteButtons.Straight2.Selected",
+          "116": "Main.RouletteButtons.Straight20.Selected",
+          "117": "Main.RouletteButtons.Straight21.Selected",
+          "118": "Main.RouletteButtons.Straight22.Selected",
+          "119": "Main.RouletteButtons.Straight23.Selected",
+          "120": "Main.RouletteButtons.Straight24.Selected",
+          "121": "Main.RouletteButtons.Straight25.Selected",
+          "122": "Main.RouletteButtons.Straight26.Selected",
+          "123": "Main.RouletteButtons.Straight27.Selected",
+          "124": "Main.RouletteButtons.Straight28.Selected",
+          "125": "Main.RouletteButtons.Straight29.Selected",
+          "126": "Main.RouletteButtons.Straight3.Selected",
+          "127": "Main.RouletteButtons.Straight30.Selected",
+          "128": "Main.RouletteButtons.Straight31.Selected",
+          "129": "Main.RouletteButtons.Straight32.Selected",
+          "130": "Main.RouletteButtons.Straight33.Selected",
+          "131": "Main.RouletteButtons.Straight34.Selected",
+          "132": "Main.RouletteButtons.Straight35.Selected",
+          "133": "Main.RouletteButtons.Straight36.Selected",
+          "134": "Main.RouletteButtons.Straight4.Selected",
+          "135": "Main.RouletteButtons.Straight5.Selected",
+          "136": "Main.RouletteButtons.Straight6.Selected",
+          "137": "Main.RouletteButtons.Straight7.Selected",
+          "138": "Main.RouletteButtons.Straight8.Selected",
+          "139": "Main.RouletteButtons.Straight9.Selected",
+          "140": "Main.RouletteButtons.StraightDblZero.Selected",
+          "141": "Main.RouletteButtons.StraightZero.Selected",
+          "142": "Main.RouletteButtons.Street101112.Selected",
+          "143": "Main.RouletteButtons.Street123.Selected",
+          "144": "Main.RouletteButtons.Street131415.Selected",
+          "145": "Main.RouletteButtons.Street161718.Selected",
+          "146": "Main.RouletteButtons.Street192021.Selected",
+          "147": "Main.RouletteButtons.Street222324.Selected",
+          "148": "Main.RouletteButtons.Street252627.Selected",
+          "149": "Main.RouletteButtons.Street282930.Selected",
+          "150": "Main.RouletteButtons.Street313233.Selected",
+          "151": "Main.RouletteButtons.Street343536.Selected",
+          "152": "Main.RouletteButtons.Street456.Selected",
+          "153": "Main.RouletteButtons.Street789.Selected",
+          "154": "Main.RouletteButtons.Third12.Selected"
+        },
+        "3": {
+          "1": "Main.Wheel.Visibility_fb"
+        }
+      },
+      "numeric": {
+        "1": {
+          "1": "Main.AmountBank.Analog",
+          "2": "Main.PreviousWin1.Analog",
+          "3": "Main.PreviousWin2.Analog",
+          "4": "Main.PreviousWin3.Analog",
+          "5": "Main.PreviousWin4.Analog",
+          "6": "Main.PreviousWin5.Analog",
+          "7": "Main.RemainingBetCount.Analog",
+          "8": "Main.TotalBet.Analog",
+          "9": "Main.WinningAmount.Analog"
+        }
+      },
+      "string": {
+        "1": {
+          "5": "Main.FormattedText.Serial"
+        }
+      }
+    },
+    "events": {
+      "boolean": {
+        "Main.PlaceBetbtn.Press": {
+          "joinId": 2,
+          "smartObjectId": 1
+        },
+        "Main.Resetbtn.Press": {
+          "joinId": 3,
+          "smartObjectId": 1
+        },
+        "Main.RouletteButtons.Black.Press": {
+          "joinId": 3,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Column1.Press": {
+          "joinId": 4,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Column2.Press": {
+          "joinId": 5,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Column3.Press": {
+          "joinId": 6,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner10111314.Press": {
+          "joinId": 7,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner11121415.Press": {
+          "joinId": 8,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner1245.Press": {
+          "joinId": 9,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner13141617.Press": {
+          "joinId": 10,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner14151718.Press": {
+          "joinId": 11,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner16171920.Press": {
+          "joinId": 12,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner17182021.Press": {
+          "joinId": 13,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner19202223.Press": {
+          "joinId": 14,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner20212324.Press": {
+          "joinId": 15,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner22232526.Press": {
+          "joinId": 16,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner23242627.Press": {
+          "joinId": 17,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner2356.Press": {
+          "joinId": 18,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner25262829.Press": {
+          "joinId": 19,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner26272930.Press": {
+          "joinId": 20,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner28293132.Press": {
+          "joinId": 21,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner29303233.Press": {
+          "joinId": 22,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner31323435.Press": {
+          "joinId": 23,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner32333536.Press": {
+          "joinId": 24,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner4578.Press": {
+          "joinId": 25,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner5689.Press": {
+          "joinId": 26,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner781011.Press": {
+          "joinId": 27,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Corner891112.Press": {
+          "joinId": 28,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Even.Press": {
+          "joinId": 29,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.First12.Press": {
+          "joinId": 30,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.High.Press": {
+          "joinId": 31,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line1013.Press": {
+          "joinId": 32,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line1316.Press": {
+          "joinId": 33,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line14.Press": {
+          "joinId": 34,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line1619.Press": {
+          "joinId": 35,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line1922.Press": {
+          "joinId": 36,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line2225.Press": {
+          "joinId": 37,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line2528.Press": {
+          "joinId": 38,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line2831.Press": {
+          "joinId": 39,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line3134.Press": {
+          "joinId": 40,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line47.Press": {
+          "joinId": 41,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Line710.Press": {
+          "joinId": 42,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Low.Press": {
+          "joinId": 43,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Odd.Press": {
+          "joinId": 44,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Red.Press": {
+          "joinId": 45,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Second12.Press": {
+          "joinId": 46,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1011.Press": {
+          "joinId": 47,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1013.Press": {
+          "joinId": 48,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1112.Press": {
+          "joinId": 49,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1114.Press": {
+          "joinId": 50,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split12.Press": {
+          "joinId": 51,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1215.Press": {
+          "joinId": 52,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1314.Press": {
+          "joinId": 53,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1316.Press": {
+          "joinId": 54,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split14.Press": {
+          "joinId": 55,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1415.Press": {
+          "joinId": 56,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1417.Press": {
+          "joinId": 57,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1518.Press": {
+          "joinId": 58,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1617.Press": {
+          "joinId": 59,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1619.Press": {
+          "joinId": 60,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1718.Press": {
+          "joinId": 61,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1720.Press": {
+          "joinId": 62,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1821.Press": {
+          "joinId": 63,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1920.Press": {
+          "joinId": 64,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split1922.Press": {
+          "joinId": 65,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2021.Press": {
+          "joinId": 66,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2023.Press": {
+          "joinId": 67,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2124.Press": {
+          "joinId": 68,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2223.Press": {
+          "joinId": 69,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2225.Press": {
+          "joinId": 70,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split23.Press": {
+          "joinId": 71,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2324.Press": {
+          "joinId": 72,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2326.Press": {
+          "joinId": 73,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2427.Press": {
+          "joinId": 74,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split25.Press": {
+          "joinId": 75,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2526.Press": {
+          "joinId": 76,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2528.Press": {
+          "joinId": 77,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2627.Press": {
+          "joinId": 78,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2629.Press": {
+          "joinId": 79,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2730.Press": {
+          "joinId": 80,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2829.Press": {
+          "joinId": 81,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2831.Press": {
+          "joinId": 82,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2930.Press": {
+          "joinId": 83,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split2932.Press": {
+          "joinId": 84,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3033.Press": {
+          "joinId": 85,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3132.Press": {
+          "joinId": 86,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3134.Press": {
+          "joinId": 87,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3233.Press": {
+          "joinId": 88,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3235.Press": {
+          "joinId": 89,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3336.Press": {
+          "joinId": 90,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3435.Press": {
+          "joinId": 91,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split3536.Press": {
+          "joinId": 92,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split36.Press": {
+          "joinId": 93,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split45.Press": {
+          "joinId": 94,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split47.Press": {
+          "joinId": 95,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split56.Press": {
+          "joinId": 96,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split58.Press": {
+          "joinId": 97,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split69.Press": {
+          "joinId": 98,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split710.Press": {
+          "joinId": 99,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split78.Press": {
+          "joinId": 100,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split811.Press": {
+          "joinId": 101,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split89.Press": {
+          "joinId": 102,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Split912.Press": {
+          "joinId": 103,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight1.Press": {
+          "joinId": 104,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight10.Press": {
+          "joinId": 105,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight11.Press": {
+          "joinId": 106,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight12.Press": {
+          "joinId": 107,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight13.Press": {
+          "joinId": 108,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight14.Press": {
+          "joinId": 109,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight15.Press": {
+          "joinId": 110,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight16.Press": {
+          "joinId": 111,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight17.Press": {
+          "joinId": 112,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight18.Press": {
+          "joinId": 113,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight19.Press": {
+          "joinId": 114,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight2.Press": {
+          "joinId": 115,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight20.Press": {
+          "joinId": 116,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight21.Press": {
+          "joinId": 117,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight22.Press": {
+          "joinId": 118,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight23.Press": {
+          "joinId": 119,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight24.Press": {
+          "joinId": 120,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight25.Press": {
+          "joinId": 121,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight26.Press": {
+          "joinId": 122,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight27.Press": {
+          "joinId": 123,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight28.Press": {
+          "joinId": 124,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight29.Press": {
+          "joinId": 125,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight3.Press": {
+          "joinId": 126,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight30.Press": {
+          "joinId": 127,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight31.Press": {
+          "joinId": 128,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight32.Press": {
+          "joinId": 129,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight33.Press": {
+          "joinId": 130,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight34.Press": {
+          "joinId": 131,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight35.Press": {
+          "joinId": 132,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight36.Press": {
+          "joinId": 133,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight4.Press": {
+          "joinId": 134,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight5.Press": {
+          "joinId": 135,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight6.Press": {
+          "joinId": 136,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight7.Press": {
+          "joinId": 137,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight8.Press": {
+          "joinId": 138,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Straight9.Press": {
+          "joinId": 139,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.StraightDblZero.Press": {
+          "joinId": 140,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.StraightZero.Press": {
+          "joinId": 141,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street101112.Press": {
+          "joinId": 142,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street123.Press": {
+          "joinId": 143,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street131415.Press": {
+          "joinId": 144,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street161718.Press": {
+          "joinId": 145,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street192021.Press": {
+          "joinId": 146,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street222324.Press": {
+          "joinId": 147,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street252627.Press": {
+          "joinId": 148,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street282930.Press": {
+          "joinId": 149,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street313233.Press": {
+          "joinId": 150,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street343536.Press": {
+          "joinId": 151,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street456.Press": {
+          "joinId": 152,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Street789.Press": {
+          "joinId": 153,
+          "smartObjectId": 2
+        },
+        "Main.RouletteButtons.Third12.Press": {
+          "joinId": 154,
+          "smartObjectId": 2
+        }
+      },
+      "numeric": {},
+      "string": {
+        "Main.AmountBet.OutputText": {
+          "joinId": 1,
+          "smartObjectId": 1
+        }
+      }
+    }
+  }
+}

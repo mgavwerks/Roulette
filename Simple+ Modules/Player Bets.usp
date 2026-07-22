@@ -1,0 +1,1309 @@
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#HINT "Records Player Bet"
+#CATEGORY "46" "Game" // Custom
+#ENABLE_TRACE
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+ANALOG_INPUT	WinningNumber;
+DIGITAL_INPUT	ClearBets,
+				ResetGame,
+				NumFirstTwelve,
+				NumSecondTwelve,
+				NumThirdTwelve,
+				NumEven,
+				NumOdd,
+				NumRed,
+				NumBlack,
+				NumHigh,
+				NumLow,
+				NumZero,
+				NumDblZero,
+				BetLow,
+				BetFirstTwelve,
+				BetEven,
+				BetSecondTwelve,
+				BetRed,
+				BetBlack,
+				BetThirdTwelve,
+				BetOdd,
+				BetHigh,	
+				BetZero,
+				BetDblZero,
+				NumColumn[3],
+				BetColumn[3],
+				StraightBet[36],
+				SplitBet[57],
+				LineBet[11],
+				StreetBet[12],
+				CornerBet[22];
+String_INPUT	BetAmount$[5]; 
+// STRING_INPUT 
+// BUFFER_INPUT 
+STRING_OUTPUT	ErrorMessage;
+DIGITAL_OUTPUT	DisplayErrorMessage,
+				ResetPushed; 
+ANALOG_OUTPUT	PlayerBankOut,
+				PlayerTotalBet,
+				PlayerWinnings,
+				BetCount,
+				PrevWin[5];
+	
+
+/*******************************************************************************************
+  Parameters
+*******************************************************************************************/
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+STRUCTURE BetStructure
+{
+String	BetType[8];
+Integer	NumberPlayed;
+Integer BetAmount;
+};
+
+BetStructure PlayerBets[50];
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+INTEGER CurrentBetArrayIndex,
+		TotalBet,
+		PlayerBank,
+		BetAmount,
+		BetsRemaining,
+		PrevWinIndex;
+STRING	PlaceBetType[8];
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+//Converts Serial bet amount to integer
+Integer_Function StringBetToAnalog()			
+{
+	Integer bet;
+	BetAmount = atoi(BetAmount$);
+	return (BetAmount);
+}
+
+//Displays total player bets from BetStructure
+Function AddToTotalBet(Integer Bet)
+{			
+    TotalBet = TotalBet + Bet;
+    PlayerTotalBet = TotalBet;
+}
+
+Function ReturnPreviousWinners(Integer Winner){
+ PrevWin[PrevWinIndex] = Winner;
+ PrevWinIndex = PrevWinIndex + 1;
+ 
+ If(PrevWinIndex = 6){
+ 	PrevWinIndex = 1;
+ }
+}
+
+Function DisplayMessage(Integer MsgNum){
+	Switch(MsgNum)
+	{
+		Case(1):
+			{
+				ErrorMessage = "Not enough bank. Please adjust your bet or reset the game";
+				Pulse(200,DisplayErrorMessage);
+			}
+		Case(2):
+			{
+				ErrorMessage = "You do not have any bets remaining.";
+				Pulse(200,DisplayErrorMessage);
+			}
+		Default:{}
+	}
+		
+}
+
+/***********************************
+Bet Managing Functions
+***********************************/
+// Subract Bet from Bank
+Function UpdatePlayerBank() {
+	PlayerBank = PlayerBank - StringBetToAnalog();
+	PlayerBankOut = PlayerBank;
+}
+
+
+
+/***********************************
+Set Bets Structures By Type
+***********************************/
+
+//Add SPLIT Bet to Bet Structure
+Function AddSplitBet(Integer Number1, Integer Number2){
+	
+	Trace("Storing SPLIT bet Index:%d with Numbers:%d and %d, with Bet:%d",CurrentBetArrayIndex, Number1, Number2, StringBetToAnalog());
+	
+	//Add to Bet Structure
+	PlayerBets[CurrentBetArrayIndex].BetType = "Split";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Number1;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Split";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Number2;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("Current Bet Index: %d", CurrentBetArrayIndex);
+	//AddToTotalBet(NewBet);
+	
+	//Update Player Bank
+	UpdatePlayerBank();	
+ 
+}
+
+//Add STRAIGHT Bet to Bet Structure
+Function AddStraightBet(Integer NumberToBet){
+	
+	Trace("Storing STRAIGHT bet Index:%d with Number:%d and Bet:%d",CurrentBetArrayIndex, NumberToBet, StringBetToAnalog());
+	
+	//Add to Bet Structure
+	PlayerBets[CurrentBetArrayIndex].BetType = "Straight";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = NumberToBet;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("New bet index: %d", CurrentBetArrayIndex);
+	
+	//Update Player Bank
+	UpdatePlayerBank();
+}
+
+//Add CORNER Bet to Bet Structure
+Function AddCornerBet(Integer Num1, Integer Num2, Integer Num3, Integer Num4){
+
+Trace("Storing CORNER bet Index:%d with Numbers:%d, %d, %d, and %d, with Bet:%d",CurrentBetArrayIndex, Num1, Num2, Num3, Num4, StringBetToAnalog());
+	
+	//Add to Bet Structure
+	PlayerBets[CurrentBetArrayIndex].BetType = "Corner";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num1;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Corner";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num2;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Corner";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num3;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Corner";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num4;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("Current Bet Index: %d", CurrentBetArrayIndex);
+	//AddToTotalBet(NewBet);
+	
+	//Update Player Bank
+	UpdatePlayerBank();
+}
+
+
+//Add STREET Bet to Bet Structure
+Function AddStreetBet(Integer Num1, Integer Num2, Integer Num3){
+Trace("Storing Street bet Index:%d with Numbers:%d, %d, and %d, with Bet:%d",CurrentBetArrayIndex, Num1, Num2, Num3, StringBetToAnalog());
+	
+	//Add to Bet Structure
+	PlayerBets[CurrentBetArrayIndex].BetType = "Street";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num1;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Street";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num2;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Street";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num3;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("Current Bet Index: %d", CurrentBetArrayIndex);
+	//AddToTotalBet(NewBet);
+	
+	//Update Player Bank
+	UpdatePlayerBank();
+}
+
+//Add LINE Bet to Bet Structure
+Function AddLineBet (Integer Num1, Integer Num2, Integer Num3, Integer Num4, Integer Num5, Integer Num6){
+Trace("Storing Line bet Index:%d with Numbers:%d, %d, %d, %d, %d, and %d, with Bet:%d",CurrentBetArrayIndex, Num1, Num2, Num3, Num4, Num5, Num6, StringBetToAnalog());
+	
+	//Add to Bet Structure
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num1;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num2;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num3;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num4;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num5;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	PlayerBets[CurrentBetArrayIndex].BetType = "Line";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = Num6;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("Current Bet Index: %d", CurrentBetArrayIndex);
+	
+	//Update Player Bank
+	UpdatePlayerBank();
+}
+
+Function PlaceBet(String PlaceBetType, Integer Index)
+{
+   If(BetsRemaining > 0){
+	If(PlayerBank != 0 && BetAmount <= PlayerBank){
+	Switch(Index)
+	{
+		Case(1):{
+			if (PlaceBetType = "Split"){
+				AddSplitBet(1,2);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(1,2,4,5);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(1,2,3);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(1,2,3,4,5,6);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		
+		Case(2):{
+			if (PlaceBetType = "Split"){
+				AddSplitBet(2,3);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(2,3,5,6);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(4,5,6);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(4,5,6,7,8,9);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		
+		Case(3):{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(1,4);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(4,5,7,8);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(7,8,9);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(7,8,9,10,11,12);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		
+		Case(4):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(2,5);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(5,6,8,9);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(10,11,12);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(10,11,12,13,14,15);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		
+		Case(5):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(3,6);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(7,8,10,11);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(13,14,15);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(13,14,15,16,17,18);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(6):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(4,5);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(8,9,11,12);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(16,17,18);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(16,17,18,19,20,21);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(7):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(5,6);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(10,11,13,14);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(19,20,21);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(19,20,21,22,23,24);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(8):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(4,7);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(11,12,14,15);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(22,23,24);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(22,23,24,25,26,27);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+			
+		
+		}
+		Case(9):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(5,8);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(13,14,16,17);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(25,26,27);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(25,26,27,28,29,30);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(10):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(6,9);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(14,15,17,18);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(28,29,30);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(28,29,30,31,32,33);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(11):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(7,8);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(16,17,19,20);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(31,32,33);
+			}
+			else if (PlaceBetType = "Line"){
+				AddLineBet(31,32,33,34,35,36);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(12):									//End of Line Bets
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(8,9);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(17,18,20,21);
+			}
+			else if (PlaceBetType = "Street"){
+				AddStreetBet(34,35,36);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(13):										//End of Street Bets
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(7,10);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(19,20,22,23);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(14):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(8,11);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(20,21,23,24);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(15):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(9,12);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(22,23,25,26);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(16):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(10,11);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(23,24,26,27);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(17):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(11,12);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(25,26,28,29);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(18):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(10,13);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(26,27,29,30);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(19):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(11,14);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(28,29,31,32);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(20):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(12,15);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(29,30,32,33);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(21):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(13,14);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(31,32,34,35);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(22):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(14,15);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			else if (PlaceBetType = "Corner"){
+				AddCornerBet(32,33,35,36);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(23):									// End Corner Bets
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(13,16);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(24):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(14,17);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(25):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(15,18);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(26):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(16,17);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(27):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(17,18);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(28):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(16,19);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(29):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(17,20);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(30):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(18,21);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(31):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(19,20);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(32):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(20,21);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(33):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(19,22);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(34):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(20,23);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(35):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(21,24);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(36):									//End Straight Bets
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(22,23);
+			}
+			else if (PlaceBetType = "Straight"){
+				AddStraightBet(Index);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(37):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(23,24);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(38):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(22,25);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(39):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(23,26);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(40):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(24,27);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(41):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(25,26);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(42):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(26,27);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(43):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(25,28);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(44):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(26,29);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(45):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(27,30);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(46):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(28,29);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(47):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(29,30);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(48):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(28,31);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(49):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(29,32);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(50):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(30,33);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(51):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(31,32);
+			}
+						
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(52):
+		{
+			if (PlaceBetType = "Split")
+			{
+			AddSplitBet(32,33);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(53):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(31,34);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(54):
+		{
+			if (PlaceBetType = "Split"){
+			AddSplitBet(32,35);
+			}
+			
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(55):
+		{	
+			if (PlaceBetType = "Split"){
+			AddSplitBet(33,36);
+			}	
+					
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(56):
+		{	
+			if (PlaceBetType = "Split"){
+			AddSplitBet(34,35);
+			}	
+					
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Case(57):
+		{	
+			if (PlaceBetType = "Split"){
+			AddSplitBet(35,36);
+			}	
+					
+			AddToTotalBet(StringBetToAnalog());
+		}
+		Default:{}	
+	}
+	}
+	Else {DisplayMessage(1);}
+	}
+	Else {DisplayMessage(2);}
+	
+}
+
+Function PlaceOutsideBet(Integer BetNumber, String Position) {
+
+	If(PlayerBank != 0 && BetAmount <= PlayerBank){
+	PlayerBets[CurrentBetArrayIndex].BetType = "Outside";
+	PlayerBets[CurrentBetArrayIndex].NumberPlayed = BetNumber;
+	PlayerBets[CurrentBetArrayIndex].BetAmount = StringBetToAnalog();
+	Trace("Placing Outside Bet: %s on Index: %d with value: %d", Position, CurrentBetArrayIndex,StringBetToAnalog()); 
+	BetsRemaining = BetsRemaining - 1;
+	BetCount = BetsRemaining;
+	AddToTotalBet(StringBetToAnalog());
+	
+	//Update Bet Index
+	CurrentBetArrayIndex = CurrentBetArrayIndex + 1;
+	Trace("Current Bet Index: %d", CurrentBetArrayIndex);
+	
+	//Update Player Bank
+	UpdatePlayerBank();
+	} 
+	Else {DisplayMessage(1);}
+}
+
+
+/*******************************************************************************************
+  Event Handlers
+*******************************************************************************************/
+/* Start Inside Bet Events */
+PUSH StraightBet {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+  
+	PlaceBet("Straight", ModifiedArray);
+}
+
+PUSH SplitBet {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+
+	PlaceBet("Split", ModifiedArray);
+}
+
+PUSH CornerBet {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+
+	PlaceBet("Corner", ModifiedArray);
+}
+
+PUSH StreetBet {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+
+	PlaceBet("Street", ModifiedArray);
+}
+
+PUSH LineBet {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+
+	PlaceBet("Line", ModifiedArray);
+}
+
+/* Start Outside Bet Events */
+
+PUSH BetLow {    
+    PlaceOutsideBet(40,"Low");
+}
+
+PUSH BetHigh {
+	PlaceOutsideBet(41,"High");
+}
+
+PUSH BetEven {
+	PlaceOutsideBet(42,"Even");
+}
+
+PUSH BetOdd {
+	PlaceOutsideBet(43,"Odd");
+}
+
+PUSH BetBlack {
+	PlaceOutsideBet(44,"Black");}
+
+PUSH BetRed {
+	PlaceOutsideBet(45,"Red");
+}
+
+PUSH BetColumn {
+	Integer ModifiedArray;
+	ModifiedArray = GetLastModifiedArrayIndex();
+	
+	PlayerBets[CurrentBetArrayIndex].BetType = "Outside";
+	
+	Switch(ModifiedArray){
+		Case(1):{PlaceOutsideBet(46,"Column 1");}
+		Case(2):{PlaceOutsideBet(47,"Column 2");}
+		Case(3):{PlaceOutsideBet(48,"Column 3");}
+		Default:{}
+	}
+	
+}
+
+PUSH BetFirstTwelve {
+	PlaceOutsideBet(49,"First Twelve");
+}
+
+PUSH BetSecondTwelve {
+	PlaceOutsideBet(50,"Second Twelve");
+}
+
+PUSH BetThirdTwelve {
+	PlaceOutsideBet(51,"Third Twelve");
+}
+
+PUSH BetZero {
+	PlaceOutsideBet(0,"Zero");
+}
+
+PUSH BetDblZero {
+	PlaceOutsideBet(37,"Dbl Zero");
+}
+
+
+/* Start Other Events */
+
+PUSH ClearBets
+{
+	CurrentBetArrayIndex = 1;
+	PlayerTotalBet = 0;
+	TotalBet = 0;
+	BetsRemaining = 50;
+	
+}
+
+PUSH ResetGame
+{
+	CurrentBetArrayIndex = 1;
+	PlayerBank = 1000;
+	PlayerBankOut = PlayerBank;
+	TotalBet = 0;
+	BetsRemaining = 50;
+	BetCount = BetsRemaining;
+	Pulse(200,ResetPushed);
+}
+
+CHANGE	WinningNumber
+{
+integer WinNum;
+integer i;
+integer payout;
+
+WinNum = WinningNumber;
+trace("winning number chosen: %d",WinNum);
+
+	for(i = 1 to CurrentBetArrayIndex - 1){
+	
+		Trace("Player bets: %s, %d", PlayerBets[i].BetType, PlayerBets[i].NumberPlayed);
+	
+		if( PlayerBets[i].BetType = "Straight" && PlayerBets[i].NumberPlayed = WinNum){
+		payout = payout + PlayerBets[i].BetAmount * 35;
+		}
+		
+		if (PlayerBets[i].BetType = "Split" && PlayerBets[i].NumberPlayed = WinNum){
+		payout = payout + PlayerBets[i].BetAmount * 17;
+		}
+		
+		if (PlayerBets[i].BetType = "Corner" && PlayerBets[i].NumberPlayed = WinNum){
+		payout = payout + PlayerBets[i].BetAmount * 8;
+		}
+		
+		if (PlayerBets[i].BetType = "Street" && PlayerBets[i].NumberPlayed = WinNum){
+		payout = payout + PlayerBets[i].BetAmount * 11;
+		}
+		
+		if (PlayerBets[i].BetType = "Line" && PlayerBets[i].NumberPlayed = WinNum){
+		payout = payout + PlayerBets[i].BetAmount * 5;
+		}
+		
+		if (PlayerBets[i].BetType = "Outside"){
+		
+			If(WinNum <=18 && WinNum != 0 && PlayerBets[i].NumberPlayed = 40){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If(WinNum >=19 && WinNum <=36 && PlayerBets[i].NumberPlayed = 41){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If(NumEven = 1 && PlayerBets[i].NumberPlayed = 42){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If(NumOdd = 1 && PlayerBets[i].NumberPlayed = 43){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If(NumBlack = 1 && PlayerBets[i].NumberPlayed = 44){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If(NumRed = 1 && PlayerBets[i].NumberPlayed = 45){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumColumn[1] = 1 && PlayerBets[i].NumberPlayed = 46){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumColumn[2] = 1 && PlayerBets[i].NumberPlayed = 47){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumColumn[3] = 1 && PlayerBets[i].NumberPlayed = 48){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumFirstTwelve = 1 && PlayerBets[i].NumberPlayed = 49){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumSecondTwelve = 1 && PlayerBets[i].NumberPlayed = 50){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumThirdTwelve = 1 && PlayerBets[i].NumberPlayed = 51){
+				payout = payout + PlayerBets[i].BetAmount * 2;
+			}
+			
+			If (NumZero = 1 && PlayerBets[i].NumberPlayed = WinNum){
+				payout = payout + PlayerBets[i].BetAmount * 35;
+			}
+			
+			If (NumDblZero = 1 && PlayerBets[i].NumberPlayed = WinNum){
+				payout = payout + PlayerBets[i].BetAmount * 35;
+			}
+			
+		}
+	Trace("Index %d payout is:%d", i, payout);		
+	}
+	
+	ReturnPreviousWinners(WinNum);
+	
+	PlayerWinnings = payout;
+	PlayerBank = PlayerBank + payout;
+	PlayerBankOut = PlayerBank;
+	BetsRemaining = 50;
+	BetCount = BetsRemaining;
+}
+
+CHANGE BetAmount$ {
+StringBetToAnalog();
+}
+
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+/*******************************************************************************************
+  Main()
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+ CurrentBetArrayIndex = 1;
+ PlayerBank = 1000;
+ PlayerBankOut = PlayerBank;
+ BetsRemaining = 50;
+ BetCount = BetsRemaining;
+ PrevWinIndex = 1;
+ 
+}
