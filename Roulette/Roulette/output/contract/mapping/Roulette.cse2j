@@ -1,6 +1,6 @@
 {
   "name": "Roulette",
-  "timestamp": "2026-07-20T01:40:21.4182183+00:00",
+  "timestamp": "2026-08-30T22:00:36.0708807+00:00",
   "version": "1.0.0.0",
   "schema_version": 1,
   "extra_value": "",
@@ -183,7 +183,8 @@
       },
       "string": {
         "1": {
-          "5": "Main.FormattedText.Serial"
+          "1": "Main.AmountBet.IndirectText",
+          "6": "Main.FormattedText.Serial"
         }
       }
     },

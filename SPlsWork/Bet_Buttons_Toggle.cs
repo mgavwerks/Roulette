@@ -95,22 +95,22 @@ public override void LogosSplusInitialize()
     RESETBUTTONS = new Crestron.Logos.SplusObjects.DigitalInput( RESETBUTTONS__DigitalInput__, this );
     m_DigitalInputList.Add( RESETBUTTONS__DigitalInput__, RESETBUTTONS );
     
-    BETBUTTONS = new InOutArray<DigitalInput>( 154, this );
-    for( uint i = 0; i < 154; i++ )
+    BETBUTTONS = new InOutArray<DigitalInput>( 152, this );
+    for( uint i = 0; i < 152; i++ )
     {
         BETBUTTONS[i+1] = new Crestron.Logos.SplusObjects.DigitalInput( BETBUTTONS__DigitalInput__ + i, BETBUTTONS__DigitalInput__, this );
         m_DigitalInputList.Add( BETBUTTONS__DigitalInput__ + i, BETBUTTONS[i+1] );
     }
     
-    BETBUTTONSOUT = new InOutArray<DigitalOutput>( 154, this );
-    for( uint i = 0; i < 154; i++ )
+    BETBUTTONSOUT = new InOutArray<DigitalOutput>( 152, this );
+    for( uint i = 0; i < 152; i++ )
     {
         BETBUTTONSOUT[i+1] = new Crestron.Logos.SplusObjects.DigitalOutput( BETBUTTONSOUT__DigitalOutput__ + i, this );
         m_DigitalOutputList.Add( BETBUTTONSOUT__DigitalOutput__ + i, BETBUTTONSOUT[i+1] );
     }
     
     
-    for( uint i = 0; i < 154; i++ )
+    for( uint i = 0; i < 152; i++ )
         BETBUTTONS[i+1].OnDigitalPush.Add( new InputChangeHandlerWrapper( BETBUTTONS_OnPush_0, false ) );
         
     RESETBUTTONS.OnDigitalPush.Add( new InputChangeHandlerWrapper( RESETBUTTONS_OnPush_1, false ) );
